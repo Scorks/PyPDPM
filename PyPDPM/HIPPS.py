@@ -1,4 +1,9 @@
-import bisect
+import sys
+sys.path.append('..')
+
+from data import mappings
+
+
 
 PT_OT_CMI_MAP = {'A': [1.53, 1.49], 'B': [1.69, 1.63], 'C': [1.88, 1.68],
                  'D': [1.92, 1.53], 'E': [1.42, 1.41], 'F': [1.61, 1.59],
@@ -27,7 +32,7 @@ BASE_RATES_URBAN = {'2022': {'PT': 62.84, 'OT': 58.49,
 BASE_RATES_RURAL = {'2022': {'PT': 71.63, 'OT': 65.79,
                              'SLP': 29.56, 'NPG': 104.66, 'NTA': 78.96, 'NCM': 99.91}}
 
-PER_DIEM_ADJUSTMENTS = {'PT_OT': {range(1, 21): 1.00, range(21, 28): 0.98, range(28, 35): 0.96, range(
+VARIABLE_PER_DIEM_ADJUSTMENTS = {'PT_OT': {range(1, 21): 1.00, range(21, 28): 0.98, range(28, 35): 0.96, range(
     35, 42): 0.94, range(42, 49): 0.92, range(49, 56): 0.90, range(56, 63): 0.88, range(63, 70): 0.86,
     range(70, 77): 0.84, range(77, 84): 0.82, range(84, 91): 0.80, range(91, 98): 0.78, range(98, 151): 0.76},
     'NTA': {range(1, 4): 3.00, range(4, 151): 1.00}}
@@ -53,21 +58,144 @@ def getReimbursementAmount(HIPPScode: str, dayOfStay: int, urban: bool = True, y
     else:
         BASE_RATE_MAP = BASE_RATES_RURAL[year]
 
-    a = (next(PER_DIEM_ADJUSTMENTS['PT_OT'][key]
-         for key in PER_DIEM_ADJUSTMENTS['PT_OT'] if 42 in key))
+    a = (next(VARIABLE_PER_DIEM_ADJUSTMENTS['PT_OT'][key]
+         for key in VARIABLE_PER_DIEM_ADJUSTMENTS['PT_OT'] if 42 in key))
 
     try:
-        reimbursement = round((PT_OT_CMI[0] * BASE_RATE_MAP['PT'] * (next(PER_DIEM_ADJUSTMENTS['PT_OT'][key]
-                                                                          for key in PER_DIEM_ADJUSTMENTS['PT_OT'] if dayOfStay in key))) + (PT_OT_CMI[1] * BASE_RATE_MAP['OT']
-                                                                                                                                             * (next(PER_DIEM_ADJUSTMENTS['PT_OT'][key]
-                                                                                                                                                     for key in PER_DIEM_ADJUSTMENTS['PT_OT'] if dayOfStay in key))) + (SLP_CMI * BASE_RATE_MAP['SLP']) + (NPG_CMI * BASE_RATE_MAP['NPG']) + (NTA_CMI * BASE_RATE_MAP['NTA'] * ((next(PER_DIEM_ADJUSTMENTS['NTA'][key]
-                                                                                                                                                                                                                                                                                                                                      for key in PER_DIEM_ADJUSTMENTS['NTA'] if dayOfStay in key)))), 2)
+        reimbursement = round((PT_OT_CMI[0] * BASE_RATE_MAP['PT'] * (next(VARIABLE_PER_DIEM_ADJUSTMENTS['PT_OT'][key]
+                                                                          for key in VARIABLE_PER_DIEM_ADJUSTMENTS['PT_OT'] if dayOfStay in key))) + (PT_OT_CMI[1] * BASE_RATE_MAP['OT']
+                                                                                                                                                      * (next(VARIABLE_PER_DIEM_ADJUSTMENTS['PT_OT'][key]
+                                                                                                                                                              for key in VARIABLE_PER_DIEM_ADJUSTMENTS['PT_OT'] if dayOfStay in key))) + (SLP_CMI * BASE_RATE_MAP['SLP']) + (NPG_CMI * BASE_RATE_MAP['NPG']) + (NTA_CMI * BASE_RATE_MAP['NTA'] * ((next(VARIABLE_PER_DIEM_ADJUSTMENTS['NTA'][key]
+                                                                                                                                                                                                                                                                                                                                                        for key in VARIABLE_PER_DIEM_ADJUSTMENTS['NTA'] if dayOfStay in key)))), 2)
     except:
         raise Exception('Invalid arguments')
     else:
         return reimbursement
 
+# generate HIPPS code -------------------------------------------------------------------------------------------------------------------------
 
+# for the PT & OT components, two classifications are used (clinical category and functional status)
+
+def _get_PT_OT_ClinicalCategory(ICD10CM_Code):
+    '''
+    Convert ICD10CM_Code to PDPM Clinical Category using mappings.PDPM_ICD10_Mappings_FY2020_clinical_category, and then convert to PT & OT Clinical Categories
+    '''
+    ICD10CM_Code = ICD10CM_Code.replace('.', '').strip()
+
+    if ICD10CM_Code in mappings.PDPM_ICD10_Mappings_FY2020_clinical_category:
+        PDPM_clinical_category = mappings.PDPM_ICD10_Mappings_FY2020_clinical_category[ICD10CM_Code]
+        if PDPM_clinical_category in ['Acute Infections', 'Medical Management', 'Cancer', 'Pulmonary', 'Cardiovascular and Coagulations']:
+            return 'Medical Management'
+        elif PDPM_clinical_category in ['Non-Surgical Orthopedic/Musculoskeletal', 'Orthopedic Surgery (Except Major Joint Replacement or Spinal Surgery)']:
+            return 'Other Orthopedic'
+        elif PDPM_clinical_category in ['Acute Neurologic', 'Non-Orthopedic Surgery']:
+            return 'Non-Orthopedic Surgery and Acute Neurologic'
+        elif PDPM_clinical_category in ['Major Joint Replacement or Spinal Surgery']:
+            return 'Major Joint Replacement or Spinal Surgery'
+        
+        # Return to provider: This indicates that the SNF will not receive payment. In such cases, one should wait for a correction or more information from the provider.
+        elif PDPM_clinical_category == 'Return to Provider':
+            return 'Return to Provider'
+    else:
+        return 'Unmapped'
+
+'''
+SECTION GG ITEM : FUNCTIONAL RANGE SCORE
+GG0130A1 (Self-care: Eating) : 0 - 4
+GG0130B1 (Self-care: Oral Hygiene) : 0 - 4
+GG0130C1 (Self-care: Toileting Hygiene) : 0 - 4
+--------------------------------------------------
+GG0170B1 (Mobility: Sit to Lying) and GG0170C1 (Mobility: Lying to Sitting on side of bed) : 0 - 4 (average of two items)
+--------------------------------------------------
+GG0170D1 (Mobility: Sit to Stand) and GG0170E1 - Mobility: Chair/bed-to-chair transfer and GG0170F1 - Mobility: Toilet Transfer: 0 - 4 (average of 3 items)
+--------------------------------------------------
+GG0170J1 - Mobility: Walk 50 feet with 2 turns and GG0170K1 - Mobility: Walk 150 feet 0 - 4 (average of 2 items)
+
+The above values are summed, totaling to section_GG_function_score
+'''
+def _get_PT_OT_ClinicalClassificationGroup(ICD10CM_Code, section_GG_function_score):
+    PT_OT_clinical_category = _get_PT_OT_ClinicalCategory(ICD10CM_Code)
+    if (0 > int(section_GG_function_score) > 24):
+        raise ValueError('Invalid section_GG_function_score, value must be an integer between 0 and 24')
+
+    if PT_OT_clinical_category == 'Major Joint Replacement or Spinal Surgery':
+        if section_GG_function_score in range(0, 6):
+            return 'TA'
+        elif section_GG_function_score in range(6, 10):
+            return 'TB'
+        elif section_GG_function_score in range(10, 24):
+            return 'TC'
+        elif section_GG_function_score == 24:
+            return 'TD'
+    elif PT_OT_clinical_category == 'Other Orthopedic':
+        if section_GG_function_score in range(0, 6):
+            return 'TE'
+        elif section_GG_function_score in range(6, 10):
+            return 'TF'
+        elif section_GG_function_score in range(10, 24):
+            return 'TG'
+        elif section_GG_function_score == 24:
+            return 'TH'
+    elif PT_OT_clinical_category == 'Medical Management':
+        if section_GG_function_score in range(0, 6):
+            return 'TI'
+        elif section_GG_function_score in range(6, 10):
+            return 'TJ'
+        elif section_GG_function_score in range(10, 24):
+            return 'TK'
+        elif section_GG_function_score == 24:
+            return 'TL'
+    elif PT_OT_clinical_category == 'Non-Orthopedic Surgery and Acute Neurologic':
+        if section_GG_function_score in range(0,6):
+            return 'TM'
+        elif section_GG_function_score in range(6, 10):
+            return 'TN'
+        elif section_GG_function_score in range(10, 24):
+            return 'TO'
+        elif section_GG_function_score == 24:
+            return 'TP'
+    elif PT_OT_clinical_category == 'Return to Provider':
+        return 'Return to Provider'
+    elif PT_OT_clinical_category == 'Unmapped':
+        return 'Unmapped'
+
+def _get_SLP_CaseMixClassificationGroup(ICD10CM_Codes: list, cognitiveImpairment: bool, acuteNeurologicalCondition: bool, mechanicallyAlteredDiet: bool, swallowingDisorder: bool) -> str:
+    '''
+    @param ICD10CM_Code: List of ICD-10-CM does that are potential comorbidities
+    '''
+    comorbidityFlag = False
+    for comorbidity in ICD10CM_Codes:
+        if comorbidity.replace('.', '').strip() in mappings.PDPM_ICD10_Mappings_FY2020_SLP:
+            comorbidityFlag = True
+    
+    if comorbidityFlag + cognitiveImpairment + acuteNeurologicalCondition == 0:
+        if not mechanicallyAlteredDiet and not swallowingDisorder:
+            return 'SA'
+        elif (mechanicallyAlteredDiet + swallowingDisorder == 1):
+            return 'SB'
+        elif (mechanicallyAlteredDiet and swallowingDisorder):
+            return 'SC'
+    elif comorbidityFlag + cognitiveImpairment + acuteNeurologicalCondition == 1:
+        if not mechanicallyAlteredDiet and not swallowingDisorder:
+            return 'SD'
+        elif (mechanicallyAlteredDiet + swallowingDisorder == 1):
+            return 'SE'
+        elif (mechanicallyAlteredDiet and swallowingDisorder):
+            return 'SF'
+    elif comorbidityFlag + cognitiveImpairment + acuteNeurologicalCondition == 2:
+        if not mechanicallyAlteredDiet and not swallowingDisorder:
+            return 'SG'
+        elif (mechanicallyAlteredDiet + swallowingDisorder == 1):
+            return 'SH'
+        elif (mechanicallyAlteredDiet and swallowingDisorder):
+            return 'SI'
+    elif comorbidityFlag + cognitiveImpairment + acuteNeurologicalCondition == 3:
+        if not mechanicallyAlteredDiet and not swallowingDisorder:
+            return 'SJ'
+        elif (mechanicallyAlteredDiet + swallowingDisorder == 1):
+            return 'SK'
+        elif (mechanicallyAlteredDiet and swallowingDisorder):
+            return 'SL'
 '''
 def haversine(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
     """
@@ -98,4 +226,22 @@ def test() -> int:
     return 1
 
 
-print(getReimbursementAmount('ABCD1', 30))
+fileReader = open('ICDCODES.txt', 'r')
+
+myDict = {}
+
+lines = fileReader.readlines()
+for line in lines:
+    line = line.split()
+    arg = line[1]
+    response = (_get_PT_OT_ClinicalCategory(arg))
+    if response in myDict:
+        myDict[response] += 1
+    else:
+        myDict[response] = 0
+
+print(myDict)
+
+# print(_get_PT_OT_ClinicalCategory('S72399H      '))
+# print(_get_PT_OT_ClinicalClassificationGroup('I69391        ', 10))
+print(_get_SLP_CaseMixClassificationGroup(['I69991', 'C322', 'notACode'], True, True, False, True))
