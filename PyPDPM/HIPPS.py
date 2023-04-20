@@ -159,14 +159,22 @@ def _get_PT_OT_ClinicalClassificationGroup(ICD10CM_Code, section_GG_function_sco
     elif PT_OT_clinical_category == 'Unmapped':
         return 'Unmapped'
 
-def _get_SLP_CaseMixClassificationGroup(ICD10CM_Codes: list, cognitiveImpairment: bool, acuteNeurologicalCondition: bool, mechanicallyAlteredDiet: bool, swallowingDisorder: bool) -> str:
+def _get_SLP_CaseMixClassificationGroup(cognitiveImpairment: bool, acuteNeurologicalCondition: bool, mechanicallyAlteredDiet: bool, swallowingDisorder: bool, ICD10CM_Codes: list=[]) -> str:
     '''
+    Speech-Language Pathology (SLP): These are ICD-10-CM codes that describe impairments in communication
+
     @param ICD10CM_Code: List of ICD-10-CM does that are potential comorbidities
+    @param cognitiveImpairment: Boolean representing whether patient has cognitive impairment
+    @param acuteNeurologicalCondition: Boolean representing whether patient has acute neurological condition
+    @param mechanicallyAlteredDiet: Boolean representing whether patient has a mechanically altered diet
+    @param swallowingDisorder: Boolean representing whether patient has a swallowing disorder
     '''
-    comorbidityFlag = False
+
     for comorbidity in ICD10CM_Codes:
         if comorbidity.replace('.', '').strip() in mappings.PDPM_ICD10_Mappings_FY2020_SLP:
             comorbidityFlag = True
+        else:
+            comorbidityFlag = False
     
     if comorbidityFlag + cognitiveImpairment + acuteNeurologicalCondition == 0:
         if not mechanicallyAlteredDiet and not swallowingDisorder:
@@ -196,6 +204,95 @@ def _get_SLP_CaseMixClassificationGroup(ICD10CM_Codes: list, cognitiveImpairment
             return 'SK'
         elif (mechanicallyAlteredDiet and swallowingDisorder):
             return 'SL'
+        
+def _get_NURS_PaymentGroup(nursingPaymentGroup: str) -> str:
+    '''
+    Getting the Nursing Payment Group (NPG)
+
+    @param nursingPaymentGroup: Str representing the CMG for a particular patient
+
+    # write them all out and return if valid
+    '''
+    return 0
+
+def _get_NTA_CaseMixGroup(ICD10CM_Codes: list) -> str:
+    NTA_score = 0
+    for item in ICD10CM_Codes:
+        if item in mappings.PDPM_ICD10_Mappings_FY2020_NTA:
+            value = mappings.PDPM_ICD10_Mappings_FY2020_NTA[item]
+            if value == 'HIV/AIDS':
+                NTA_score += 8
+            elif value == 'Major Organ Transplant Status, Except Lung':
+                NTA_score += 2
+            elif value == 'Lung Transplant Status':
+                NTA_score += 3
+            elif value == 'Opportunistic Infections':
+                NTA_score += 2
+            elif value == 'Aseptic Necrosis of Bone':
+                NTA_score += 2
+            elif value == 'Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone':
+                NTA_score += 2
+            elif value == 'Chronic Myeloid Leukemia':
+                NTA_score += 2
+            elif value == 'Endocarditis':
+                NTA_score += 1
+            elif value == 'Immune Disorders':
+                NTA_score += 1
+            elif value == 'End-Stage Liver Disease':
+                NTA_score += 1
+            elif value == 'Narcolepsy and Cataplexy':
+                NTA_score += 1
+            elif value == 'Cystic Fibrosis':
+                NTA_score += 1
+            elif value == 'Specified Hereditary Metabolic/Immune Disorders':
+                NTA_score += 1
+            elif value == 'Morbid Obesity':
+                NTA_score += 1
+            elif value == 'Psoriatic Arthropathy and Systemic Sclerosis':
+                NTA_score += 1
+            elif value == 'Chronic Pancreatitis':
+                NTA_score += 1
+            elif value == 'Proliferative Diabetic Retinopathy and Vitreous Hemorrhage':
+                NTA_score += 1
+            elif value == 'Complications of Specified Implanted Device or Graft':
+                NTA_score += 1
+            elif value == 'Aseptic Necrosis of Bone':
+                NTA_score += 1
+            elif value == 'Cardio-Respiratory Failure and Shock':
+                NTA_score +=1
+            elif value == 'Myelodysplastic Syndromes and Myelofibrosis':
+                NTA_score += 1
+            elif value == 'Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies':
+                NTA_score += 1
+            elif value == 'Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage':
+                NTA_score += 1
+            elif value == 'Severe Skin Burn or Condition':
+                NTA_score += 1
+            elif value == 'Intractable Epilepsy':
+                NTA_score += 1
+            elif value == 'Disorders of Immunity - Except : RxCC97: Immune Disorders':
+                NTA_score += 1
+            elif value == 'Cirrhosis of Liver':
+                NTA_score += 1
+            elif value == 'Respiratory Arrest':
+                NTA_score +=1
+            elif value == 'Pulmonary Fibrosis and Other Chronic Lung Disorders':
+                NTA_score += 1
+    
+    if NTA_score in range(0, 1):
+        return 'NF'
+    elif NTA_score in range(1, 3):
+        return 'NE'
+    elif NTA_score in range(3, 6):
+        return 'ND'
+    elif NTA_score in range(6, 9):
+        return 'NC'
+    elif NTA_score in range(9, 12):
+        return 'NB'
+    else:
+        return 'NA'
+
+
 '''
 def haversine(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
     """
@@ -243,5 +340,5 @@ for line in lines:
 print(myDict)
 
 # print(_get_PT_OT_ClinicalCategory('S72399H      '))
-# print(_get_PT_OT_ClinicalClassificationGroup('I69391        ', 10))
-print(_get_SLP_CaseMixClassificationGroup(['I69991', 'C322', 'notACode'], True, True, False, True))
+print(_get_PT_OT_ClinicalClassificationGroup('T82510A        ', 10))
+# print(_get_SLP_CaseMixClassificationGroup(True, True, False, True, ['I69991', 'C322', 'notACode']))
