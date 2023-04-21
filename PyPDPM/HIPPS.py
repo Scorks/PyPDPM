@@ -3,7 +3,26 @@ sys.path.append('..')
 
 from data import mappings
 
+PAYMENT_GROUP_TO_HIPPS_CODE_VALUE = {('TA', 'SA', 'ES3', 'NA'): 'A', ('TB', 'SB', 'ES2', 'NB'): 'B',
+                                     ('TC', 'SC', 'ES1', 'NC'): 'C', ('TD', 'SD', 'HDE2', 'ND'): 'D',
+                                     ('TE', 'SE', 'HDE1', 'NE'): 'E', ('TF', 'SF', 'HBC2', 'NF'): 'F',
+                                     ('TG', 'SG', 'CBC2'): 'G', ('TH', 'SH', 'CA2'): 'H',
+                                     ('TI', 'SI', 'CBC1'): 'I', ('TJ', 'SJ', 'CA1'): 'J',
+                                     ('TK', 'SK', 'BAB2'): 'K', ('TL', 'SL', 'BAB1'): 'L',
+                                     ('TM', 'HBC1'): 'M', ('TN', 'LDE2'): 'N', ('TO', 'LDE1'): 'O',
+                                     ('TP', 'LBC2'): 'P', ('LBC1'): 'Q', ('CDE2'): 'R', ('CDE1'): 'S',
+                                     ('PDE2'): 'T', ('PDE1'): 'U', ('PBC2'): 'V', ('PA2'): 'W',
+                                     ('PBC1'): 'X', ('PA1'): 'Y'}
 
+VALID_PT_OT_GROUPS = ['TA', 'TB', 'TC', 'TD', 'TE', 'TF', 'TG', 'TH', 'TI', 'TJ', 'TK', 'TL', 'TM', 'TN', 'TO', 'TP']
+
+VALID_SLP_GROUPS = ['SA', 'SB', 'SC', 'SD', 'SE', 'SF', 'SG', 'SH', 'SI', 'SJ', 'SK', 'SL']
+
+VALID_NURS_GROUPS = ['ES3', 'ES2', 'ES1', 'HDE2', 'HDE1', 'HBC2', 'CBC2', 'CA2', 'CBC1', 'CA1', 'BAB2', 'BAB1', 'HBC1', 'LDE2', 'LDE1', 'LBC2', 'LBC1', 'CDE2', 'CDE1', 'PDE2', 'PDE1', 'PBC2', 'PA2', 'PBC1', 'PA1']
+
+VALID_NTA_GROUPS = ['NA', 'NB', 'NC', 'ND', 'NE', 'NF']
+
+VALID_AT_GROUPS = [0, 1, 6]
 
 PT_OT_CMI_MAP = {'A': [1.53, 1.49], 'B': [1.69, 1.63], 'C': [1.88, 1.68],
                  'D': [1.92, 1.53], 'E': [1.42, 1.41], 'F': [1.61, 1.59],
@@ -71,6 +90,12 @@ def getReimbursementAmount(HIPPScode: str, dayOfStay: int, urban: bool = True, y
         raise Exception('Invalid arguments')
     else:
         return reimbursement
+    
+def calculateTotalReimbursement(HIPPScode: str, lengthOfStay: int, urban: bool = True, year: str = '2022') -> float:
+    totalReimbursement = 0
+    for day in range(1, lengthOfStay+1):
+        totalReimbursement += getReimbursementAmount(HIPPScode, day, urban, year)
+    return round(totalReimbursement, 2)
 
 # generate HIPPS code -------------------------------------------------------------------------------------------------------------------------
 
@@ -99,21 +124,23 @@ def _get_PT_OT_ClinicalCategory(ICD10CM_Code):
     else:
         return 'Unmapped'
 
-'''
-SECTION GG ITEM : FUNCTIONAL RANGE SCORE
-GG0130A1 (Self-care: Eating) : 0 - 4
-GG0130B1 (Self-care: Oral Hygiene) : 0 - 4
-GG0130C1 (Self-care: Toileting Hygiene) : 0 - 4
---------------------------------------------------
-GG0170B1 (Mobility: Sit to Lying) and GG0170C1 (Mobility: Lying to Sitting on side of bed) : 0 - 4 (average of two items)
---------------------------------------------------
-GG0170D1 (Mobility: Sit to Stand) and GG0170E1 - Mobility: Chair/bed-to-chair transfer and GG0170F1 - Mobility: Toilet Transfer: 0 - 4 (average of 3 items)
---------------------------------------------------
-GG0170J1 - Mobility: Walk 50 feet with 2 turns and GG0170K1 - Mobility: Walk 150 feet 0 - 4 (average of 2 items)
+def _get_PT_OT_ClinicalClassificationGroup(ICD10CM_Code: str, section_GG_function_score: int) -> str:
+    '''
+    @param ICD10CM_Code: ICD-10-CM primary diagnosis code
+    @param section_GG_function_score: FUNCTIONAL RANGE SCORE
+    
+    GG0130A1 (Self-care: Eating) : 0 - 4
+    GG0130B1 (Self-care: Oral Hygiene) : 0 - 4
+    GG0130C1 (Self-care: Toileting Hygiene) : 0 - 4
+    --------------------------------------------------
+    GG0170B1 (Mobility: Sit to Lying) and GG0170C1 (Mobility: Lying to Sitting on side of bed) : 0 - 4 (average of two items)
+    --------------------------------------------------
+    GG0170D1 (Mobility: Sit to Stand) and GG0170E1 - Mobility: Chair/bed-to-chair transfer and GG0170F1 - Mobility: Toilet Transfer: 0 - 4 (average of 3 items)
+    --------------------------------------------------
+    GG0170J1 - Mobility: Walk 50 feet with 2 turns and GG0170K1 - Mobility: Walk 150 feet 0 - 4 (average of 2 items)
 
-The above values are summed, totaling to section_GG_function_score
-'''
-def _get_PT_OT_ClinicalClassificationGroup(ICD10CM_Code, section_GG_function_score):
+    The above values are summed, totaling to section_GG_function_score
+    '''
     PT_OT_clinical_category = _get_PT_OT_ClinicalCategory(ICD10CM_Code)
     if (0 > int(section_GG_function_score) > 24):
         raise ValueError('Invalid section_GG_function_score, value must be an integer between 0 and 24')
@@ -159,7 +186,7 @@ def _get_PT_OT_ClinicalClassificationGroup(ICD10CM_Code, section_GG_function_sco
     elif PT_OT_clinical_category == 'Unmapped':
         return 'Unmapped'
 
-def _get_SLP_CaseMixClassificationGroup(cognitiveImpairment: bool, acuteNeurologicalCondition: bool, mechanicallyAlteredDiet: bool, swallowingDisorder: bool, ICD10CM_Codes: list=[]) -> str:
+def _get_SLP_CaseMixClassificationGroup(cognitiveImpairment: bool, acuteNeurologicalCondition: bool, mechanicallyAlteredDiet: bool, swallowingDisorder: bool, ICD10CM_Codes: list) -> str:
     '''
     Speech-Language Pathology (SLP): These are ICD-10-CM codes that describe impairments in communication
 
@@ -210,12 +237,13 @@ def _get_NURS_PaymentGroup(nursingPaymentGroup: str) -> str:
     Getting the Nursing Payment Group (NPG)
 
     @param nursingPaymentGroup: Str representing the CMG for a particular patient
-
-    # write them all out and return if valid
     '''
-    return 0
+    if (nursingPaymentGroup in VALID_NURS_GROUPS):
+        return nursingPaymentGroup
+    else:
+        raise ValueError('Invalid nursing payment group')
 
-def _get_NTA_CaseMixGroup(ICD10CM_Codes: list) -> str:
+def _get_NTA_PaymentGroup(ICD10CM_Codes: list) -> str:
     NTA_score = 0
     for item in ICD10CM_Codes:
         if item in mappings.PDPM_ICD10_Mappings_FY2020_NTA:
@@ -292,31 +320,41 @@ def _get_NTA_CaseMixGroup(ICD10CM_Codes: list) -> str:
     else:
         return 'NA'
 
+def _get_AssessmentIndicator(assessmentType: str) -> str:
+    if assessmentType == 'IPA':
+        return '0'
+    elif assessmentType == 'PPS 5-day':
+        return '1'
+    elif assessmentType == 'OBRA': # Omnibus Budget Reconciliation Act - not coded as a PPS Assessment
+        return '6'
+    
+def get_PDPM_HIPPS_code(ICD10CM_primaryDiagnosisCode: str, section_GG_function_score: int, cognitiveImpairment: bool, acuteNeurologicalCondition: bool, mechanicallyAlteredDiet: bool, swallowingDisorder: bool, ICD10CM_SLP_Codes: list, ICD10CM_NTA_Codes: list, nursingPaymentGroup: str, assessmentType: str):
+    PT_OT_PaymentGroup = _get_PT_OT_ClinicalClassificationGroup(ICD10CM_primaryDiagnosisCode, section_GG_function_score)
+    if PT_OT_PaymentGroup == 'Return to provider' or PT_OT_PaymentGroup == 'Unmapped':
+        raise ValueError('Invalid value for ICD10CM_primaryDiagnosisCode and or section_GG_function_score (0-24)')
+    SLP_PaymentGroup = _get_SLP_CaseMixClassificationGroup(cognitiveImpairment, acuteNeurologicalCondition, mechanicallyAlteredDiet, swallowingDisorder, ICD10CM_SLP_Codes)
+    NURS_PaymentGroup = _get_NURS_PaymentGroup(nursingPaymentGroup)
+    NTA_PaymentGroup = _get_NTA_PaymentGroup(ICD10CM_NTA_Codes)
+    assessmentIndicator = _get_AssessmentIndicator(assessmentType)
+    HIPPS_code = get_PDPM_HIPPS_code(PT_OT_PaymentGroup, SLP_PaymentGroup, NURS_PaymentGroup, NTA_PaymentGroup, assessmentIndicator)
+    return HIPPS_code
 
-'''
-def haversine(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
-    """
-    Calculate the great circle distance between two points on the
-    earth (specified in decimal degrees), returns the distance in
-    meters.
-    All arguments must be of equal length.
-    :param lon1: longitude of first place
-    :param lat1: latitude of first place
-    :param lon2: longitude of second place
-    :param lat2: latitude of second place
-    :return: distance in meters between the two sets of coordinates
-    """
-    # Convert decimal degrees to radians
-    lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
+def get_PDPM_HIPPS_code(PT_OT_PaymentGroup: str, SLP_PaymentGroup: str, NURS_PaymentGroup: str, NTA_PaymentGroup: str, assessmentIndicator: int) -> str:
+    if (PT_OT_PaymentGroup not in VALID_PT_OT_GROUPS):
+        raise ValueError('Invalid value for PT_OT_PaymentGroup')
+    elif (SLP_PaymentGroup not in VALID_SLP_GROUPS):
+        raise ValueError('Invalid value for SLP_PaymentGroup')
+    elif (NURS_PaymentGroup not in VALID_NURS_GROUPS):
+        raise ValueError('Invalid value for NURS_PaymentGroup')
+    elif (NTA_PaymentGroup not in VALID_NTA_GROUPS):
+        raise ValueError('Invalid value for NTA_PaymentGroup')
+    elif (assessmentIndicator not in VALID_AT_GROUPS):
+        raise ValueError('Invalid value for assessmentIndicator')
+    else:
+        HIPPS_code = next(v for k, v in PAYMENT_GROUP_TO_HIPPS_CODE_VALUE.items() if PT_OT_PaymentGroup in k) + next(v for k, v in PAYMENT_GROUP_TO_HIPPS_CODE_VALUE.items() if SLP_PaymentGroup in k) + next(v for k, v in PAYMENT_GROUP_TO_HIPPS_CODE_VALUE.items() if NURS_PaymentGroup in k) + next(v for k, v in PAYMENT_GROUP_TO_HIPPS_CODE_VALUE.items() if NTA_PaymentGroup in k) + str(assessmentIndicator)
+    
+    return HIPPS_code
 
-    # Haversine formula
-    dlon = lon2 - lon1
-    dlat = lat2 - lat1
-    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
-    c = 2 * asin(sqrt(a))
-    r = 6371  # Radius of earth in kilometers
-    return c * r
-'''
 
 
 def test() -> int:
@@ -340,5 +378,10 @@ for line in lines:
 print(myDict)
 
 # print(_get_PT_OT_ClinicalCategory('S72399H      '))
-print(_get_PT_OT_ClinicalClassificationGroup('T82510A        ', 10))
+#print(_get_PT_OT_ClinicalClassificationGroup('T82510A        ', 10))
 # print(_get_SLP_CaseMixClassificationGroup(True, True, False, True, ['I69991', 'C322', 'notACode']))
+
+code = get_PDPM_HIPPS_code('TC', 'SC', 'PA1', 'NA', 0)
+print(code)
+print(getReimbursementAmount(code, 4))
+print(calculateTotalReimbursement(code, 30))
