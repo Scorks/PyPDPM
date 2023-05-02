@@ -58,12 +58,37 @@ VARIABLE_PER_DIEM_ADJUSTMENTS = {'PT_OT': {range(1, 21): 1.00, range(21, 28): 0.
 
 
 def getReimbursementAmount(HIPPScode: str, dayOfStay: int, urban: bool = True, year: str = '2022') -> float:
+    """
+
+    Calculates the reimbursement for a specific day of a patient's stay.
+
+    Parameters
+    ----------
+    HIPPScode : str
+        The PDPM HIPPS code for the patient
+    dayOfStay : int
+        The day of the stay in which the reimbursement is being calculated for
+    urban : bool
+        Whether or not the facility is urban (default is True)
+    year : str
+        The year the reimbursement value is being calculated for (default is '2022')
+
+    Returns
+    -------
+    float
+        The amount (in dollars) that is reimbursed to the facility for one particular day
+
+    """
+
     HIPPS_characters = [char for char in HIPPScode]
     PT_OT = HIPPS_characters[0]  # physical therapy and occupational therapy
     SLP = HIPPS_characters[1]  # speech-language pathology
     NPG = HIPPS_characters[2]  # nursing payment group
     NTA = HIPPS_characters[3]  # non-therapy ancillaries
-    AT = HIPPS_characters[4]  # assessment type (0 or 1)
+    if (len(HIPPS_characters) >= 5):
+        AT = HIPPS_characters[4]  # assessment type (0 or 1)
+    else:
+        AT = '0'
 
     try:
         PT_OT_CMI = PT_OT_CMI_MAP[PT_OT]
@@ -92,6 +117,28 @@ def getReimbursementAmount(HIPPScode: str, dayOfStay: int, urban: bool = True, y
         return reimbursement
     
 def calculateTotalReimbursement(HIPPScode: str, lengthOfStay: int, urban: bool = True, year: str = '2022') -> float:
+    """
+
+    Calculates the reimbursement for a specific day of a patient's stay.
+
+    Parameters
+    ----------
+    HIPPScode : str
+        The PDPM HIPPS code for the patient
+    dayOfStay : int
+        The current day of the stay
+    urban : bool
+        Whether or not the facility is urban (default is True)
+    year : str
+        The year the reimbursement value is being calculated for (default is '2022')
+
+    Returns
+    -------
+    float
+        The amount (in dollars) that is reimbursed to the facility from day 0 to day lengthOfStay
+
+    """
+    
     totalReimbursement = 0
     for day in range(1, lengthOfStay+1):
         totalReimbursement += getReimbursementAmount(HIPPScode, day, urban, year)
@@ -101,10 +148,23 @@ def calculateTotalReimbursement(HIPPScode: str, lengthOfStay: int, urban: bool =
 
 # for the PT & OT components, two classifications are used (clinical category and functional status)
 
-def _get_PT_OT_ClinicalCategory(ICD10CM_Code):
-    '''
-    Convert ICD10CM_Code to PDPM Clinical Category using mappings.PDPM_ICD10_Mappings_FY2020_clinical_category, and then convert to PT & OT Clinical Categories
-    '''
+def _get_PT_OT_ClinicalCategory(ICD10CM_Code: str) -> str:
+    """
+    
+    Convert ICD10CM_Code to PDPM Clinical Category using mappings.PDPM_ICD10_Mappings_FY2020_clinical_category, and then convert to PT & OT Clinical Categories.
+
+    Parameters
+    ----------
+    ICD10CM_Code : str
+        The PDPM HIPPS code for the patient
+
+    Returns
+    -------
+    str
+        The clinical category of the primary diagnosis
+
+    """
+
     ICD10CM_Code = ICD10CM_Code.replace('.', '').strip()
 
     if ICD10CM_Code in mappings.PDPM_ICD10_Mappings_FY2020_clinical_category:
@@ -125,10 +185,31 @@ def _get_PT_OT_ClinicalCategory(ICD10CM_Code):
         return 'Unmapped'
 
 def _get_PT_OT_ClinicalClassificationGroup(ICD10CM_Code: str, section_GG_function_score: int) -> str:
-    '''
-    @param ICD10CM_Code: ICD-10-CM primary diagnosis code
-    @param section_GG_function_score: FUNCTIONAL RANGE SCORE
+    """
     
+    Convert ICD10CM_Code along with section GG function score to a clinical classification payment group
+
+    Parameters
+    ----------
+    ICD10CM_Code : str
+        The PDPM HIPPS code for the patient
+
+    section_GG_function_score : int
+        The section GG functional range score (standardized tool that measures the functional status and goals of the resident in various areas, including self-care, mobility, and communication)
+
+    Returns
+    -------
+    str
+        The clinical classification group of a patient
+
+    Raises
+    ------
+    ValueError
+        If the section_GG_function_score is less than 0 or greater than 24
+
+    """
+
+    '''
     GG0130A1 (Self-care: Eating) : 0 - 4
     GG0130B1 (Self-care: Oral Hygiene) : 0 - 4
     GG0130C1 (Self-care: Toileting Hygiene) : 0 - 4
@@ -141,6 +222,7 @@ def _get_PT_OT_ClinicalClassificationGroup(ICD10CM_Code: str, section_GG_functio
 
     The above values are summed, totaling to section_GG_function_score
     '''
+
     PT_OT_clinical_category = _get_PT_OT_ClinicalCategory(ICD10CM_Code)
     if (0 > int(section_GG_function_score) > 24):
         raise ValueError('Invalid section_GG_function_score, value must be an integer between 0 and 24')
@@ -187,15 +269,34 @@ def _get_PT_OT_ClinicalClassificationGroup(ICD10CM_Code: str, section_GG_functio
         return 'Unmapped'
 
 def _get_SLP_CaseMixClassificationGroup(cognitiveImpairment: bool, acuteNeurologicalCondition: bool, mechanicallyAlteredDiet: bool, swallowingDisorder: bool, ICD10CM_Codes: list) -> str:
-    '''
-    Speech-Language Pathology (SLP): These are ICD-10-CM codes that describe impairments in communication
+    """
 
-    @param ICD10CM_Code: List of ICD-10-CM does that are potential comorbidities
-    @param cognitiveImpairment: Boolean representing whether patient has cognitive impairment
-    @param acuteNeurologicalCondition: Boolean representing whether patient has acute neurological condition
-    @param mechanicallyAlteredDiet: Boolean representing whether patient has a mechanically altered diet
-    @param swallowingDisorder: Boolean representing whether patient has a swallowing disorder
-    '''
+    Convert comorbidity ICD-10-CM codes along with cognitive impairment status, acute neurological condition status, mechanically altered diet status, and swallowing disorder status to SLP (speech-language pathology) payment group
+
+    Parameters
+    ----------
+    ICD10CM_Code : list
+        List of ICD-10-CM does that are potential comorbidities
+
+    cognitiveImpairment : bool
+        Boolean value representing whether a patient has cognitive impairment
+
+    acuteNeurologicalCondition : bool
+        Boolean value representing whether a patient has an acute neurological condition
+
+    mechanicallyAlteredDiet : bool
+        Boolean value representing whether a patient has a mechanically altered diet
+
+    swallowingDisorder : bool
+        Boolean value representing whether a patient has a swallowing disorder
+
+
+    Returns
+    -------
+    str
+        The SLP payment group of a patient
+
+    """
 
     for comorbidity in ICD10CM_Codes:
         if comorbidity.replace('.', '').strip() in mappings.PDPM_ICD10_Mappings_FY2020_SLP:
@@ -236,14 +337,43 @@ def _get_NURS_PaymentGroup(nursingPaymentGroup: str) -> str:
     '''
     Getting the Nursing Payment Group (NPG)
 
-    @param nursingPaymentGroup: Str representing the CMG for a particular patient
+    Parameters
+    ----------
+    nursingPaymentGroup : str
+        The CMG for a particular patient
+    
+    Returns
+    -------
+    str
+        The nursing payment group if it is valid
+    
+    Raises
+    ------
+    ValueError
+        If the nursingPaymentGroup is invalid
     '''
+
     if (nursingPaymentGroup in VALID_NURS_GROUPS):
         return nursingPaymentGroup
     else:
         raise ValueError('Invalid nursing payment group')
 
 def _get_NTA_PaymentGroup(ICD10CM_Codes: list) -> str:
+    '''
+    Getting the Non-Therapy Ancillary (NTA) payment group
+
+    Parameters
+    ----------
+    ICD10CM_Codes : list
+        list of secondary diagnoses associated with a patient
+    
+    Returns
+    -------
+    str
+        The NTA payment group
+    
+    '''
+        
     NTA_score = 0
     for item in ICD10CM_Codes:
         if item in mappings.PDPM_ICD10_Mappings_FY2020_NTA:
@@ -321,14 +451,72 @@ def _get_NTA_PaymentGroup(ICD10CM_Codes: list) -> str:
         return 'NA'
 
 def _get_AssessmentIndicator(assessmentType: str) -> str:
+    '''
+    Getting the assessment indicator (AI)
+
+    Parameters
+    ----------
+    assessmentType : str
+        'IPA', 'PPS 5-day', or 'OBRA' representing the assessment type
+    
+    Returns
+    -------
+    str
+        The assessment indicator (0, 1, 6, or '-' if assessmentType is invalid)
+    
+    '''
+    
     if assessmentType == 'IPA':
         return '0'
     elif assessmentType == 'PPS 5-day':
         return '1'
     elif assessmentType == 'OBRA': # Omnibus Budget Reconciliation Act - not coded as a PPS Assessment
         return '6'
+    else:
+        return '-'
     
 def get_PDPM_HIPPS_code(ICD10CM_primaryDiagnosisCode: str, section_GG_function_score: int, cognitiveImpairment: bool, acuteNeurologicalCondition: bool, mechanicallyAlteredDiet: bool, swallowingDisorder: bool, ICD10CM_SLP_Codes: list, ICD10CM_NTA_Codes: list, nursingPaymentGroup: str, assessmentType: str):
+    '''
+    Getting the PDPM HIPPS code for a patient given a set of patient information
+
+    Parameters
+    ----------
+    ICD10CM_primaryDiagnosisCode : str
+        Primary diagnosis of the patient
+
+    section_GG_function_score : int
+        The section GG functional range score (standardized tool that measures the functional status and goals of the resident in various areas, including self-care, mobility, and communication)
+
+    ICD10CM_SLP_Codes : list
+        List of ICD-10-CM does that are potential comorbidities
+
+    cognitiveImpairment : bool
+        Boolean value representing whether a patient has cognitive impairment
+
+    acuteNeurologicalCondition : bool
+        Boolean value representing whether a patient has an acute neurological condition
+
+    mechanicallyAlteredDiet : bool
+        Boolean value representing whether a patient has a mechanically altered diet
+
+    swallowingDisorder : bool
+        Boolean value representing whether a patient has a swallowing disorder
+
+    ICD10CM_Codes : list
+        list of secondary diagnoses associated with a patient for NTA payment group calculation
+
+    nursingPaymentGroup : str
+        The CMG for a particular patient
+
+    assessmentType : str
+        'IPA', 'PPS 5-day', or 'OBRA' representing the assessment type
+    
+    Returns
+    -------
+    str
+        The PDPM HIPPS code of a patient
+    
+    '''
     PT_OT_PaymentGroup = _get_PT_OT_ClinicalClassificationGroup(ICD10CM_primaryDiagnosisCode, section_GG_function_score)
     if PT_OT_PaymentGroup == 'Return to provider' or PT_OT_PaymentGroup == 'Unmapped':
         raise ValueError('Invalid value for ICD10CM_primaryDiagnosisCode and or section_GG_function_score (0-24)')
@@ -339,7 +527,33 @@ def get_PDPM_HIPPS_code(ICD10CM_primaryDiagnosisCode: str, section_GG_function_s
     HIPPS_code = get_PDPM_HIPPS_code(PT_OT_PaymentGroup, SLP_PaymentGroup, NURS_PaymentGroup, NTA_PaymentGroup, assessmentIndicator)
     return HIPPS_code
 
-def get_PDPM_HIPPS_code(PT_OT_PaymentGroup: str, SLP_PaymentGroup: str, NURS_PaymentGroup: str, NTA_PaymentGroup: str, assessmentIndicator: int) -> str:
+def get_PDPM_HIPPS_code(PT_OT_PaymentGroup: str, SLP_PaymentGroup: str, NURS_PaymentGroup: str, NTA_PaymentGroup: str, assessmentIndicator: int = 0) -> str:
+    '''
+    Getting the PDPM HIPPS code for a patient given the payment groups for a patient
+
+    Parameters
+    ----------
+    PT_OT_PaymentGroup : str
+        PT/OT payment group - one of: ('TA', 'TB', 'TC', 'TD', 'TE', 'TF', 'TG', 'TH', 'TI', 'TJ', 'TK', 'TL', 'TM', 'TN', 'TO', 'TP')
+
+    SLP_PaymentGroup : str
+        SLP payment group - one of: ('SA', 'SB', 'SC', 'SD', 'SE', 'SF', 'SG', 'SH', 'SI', 'SJ', 'SK', 'SL')
+
+    NURS_PaymentGroup : str
+        NURSING payment group - one of: ('ES3', 'ES2', 'ES1', 'HDE2', 'HDE1', 'HBC2', 'CBC2', 'CA2', 'CBC1', 'CA1', 'BAB2', 'BAB1', 'HBC1', 'LDE2', 'LDE1', 'LBC2', 'LBC1', 'CDE2', 'CDE1', 'PDE2', 'PDE1', 'PBC2', 'PA2', 'PBC1', 'PA1')
+
+    NTA_PaymentGroup : str
+        NTA payment group - one of: ('NA', 'NB', 'NC', 'ND', 'NE', 'NF')
+
+    assessmentIndicator:
+        assessment indicator value - one of (0, 1, 6) default is 0
+    
+    Returns
+    -------
+    str
+        The PDPM HIPPS code of a patient
+    
+    '''
     if (PT_OT_PaymentGroup not in VALID_PT_OT_GROUPS):
         raise ValueError('Invalid value for PT_OT_PaymentGroup')
     elif (SLP_PaymentGroup not in VALID_SLP_GROUPS):
@@ -356,7 +570,7 @@ def get_PDPM_HIPPS_code(PT_OT_PaymentGroup: str, SLP_PaymentGroup: str, NURS_Pay
     return HIPPS_code
 
 
-
+'''
 def test() -> int:
     return 1
 
@@ -382,6 +596,10 @@ print(myDict)
 # print(_get_SLP_CaseMixClassificationGroup(True, True, False, True, ['I69991', 'C322', 'notACode']))
 
 code = get_PDPM_HIPPS_code('TC', 'SC', 'PA1', 'NA', 0)
+code = get_PDPM_HIPPS_code('TC', 'SC', 'PA1', 'NA')
 print(code)
 print(getReimbursementAmount(code, 4))
 print(calculateTotalReimbursement(code, 30))
+
+print(calculateTotalReimbursement('KEVE1', 2))
+'''
