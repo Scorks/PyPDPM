@@ -6,7 +6,7 @@ with open('README.rst', 'r') as f:
 setup(
     name='PyPDPM',
     packages=find_packages(include=['PyPDPM']),
-    version='0.0.5.16',
+    version='0.0.5.18',
     description='A Python library for dealing with PDPM HIPP codes',
     author='Caro Strickland',
     author_email='carostrickland321@gmail.com',

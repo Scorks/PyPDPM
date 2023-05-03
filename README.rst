@@ -356,4 +356,4 @@ as well as an NTA component adjustment factor:
 
 Using the above values, we can calculate the per-diem reimbursement from day 0 to n using the following formula:
 
-:math:`\sum_{i=0}^n` :math:`BaseRate_i` * :math:`CMI_i` * :math:`AdjustmentFactor_i` + :math:`NonCaseMix`
+(:math:`\sum_{i=0}^n` :math:`BaseRate_i` * :math:`CMI_i` * :math:`AdjustmentFactor_i`) + :math:`NonCaseMix`

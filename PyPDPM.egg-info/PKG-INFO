@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PyPDPM
-Version: 0.0.5.16
+Version: 0.0.5.18
 Summary: A Python library for dealing with PDPM HIPP codes
 Home-page: https://github.com/Scorks/PyPDPM
 Author: Caro Strickland
@@ -48,34 +48,34 @@ The reimbursement functions assume an urban facility in the year 2022, but these
 
 It is important to note that you do not need to provide the payment groups for get_PDPM_HIPPS_code if you do not have them. You can instead pass:
 
-- ICD10CM_primaryDiagnosisCode : str
+- ICD10CM_primaryDiagnosisCode (str)
         Primary diagnosis of the patient
 
-- section_GG_function_score : int
+- section_GG_function_score (int)
         The section GG functional range score (standardized tool that measures the functional status and goals of the resident in various areas, including self-care, mobility, and communication)
 
-- ICD10CM_SLP_Codes : list
+- ICD10CM_SLP_Codes (list)
         List of ICD-10-CM does that are potential comorbidities
 
-- cognitiveImpairment : bool
+- cognitiveImpairment (bool)
         Boolean value representing whether a patient has cognitive impairment
 
-- acuteNeurologicalCondition : bool
+- acuteNeurologicalCondition (bool)
         Boolean value representing whether a patient has an acute neurological condition
 
-- mechanicallyAlteredDiet : bool
+- mechanicallyAlteredDiet (bool)
         Boolean value representing whether a patient has a mechanically altered diet
 
-- swallowingDisorder : bool
+- swallowingDisorder (bool)
         Boolean value representing whether a patient has a swallowing disorder
 
-- ICD10CM_Codes : list
+- ICD10CM_Codes (list)
         list of secondary diagnoses associated with a patient for NTA payment group calculation
 
-- nursingPaymentGroup : str
+- nursingPaymentGroup (str)
         The CMG for a particular patient
 
-- assessmentType : str
+- assessmentType (str)
         'IPA', 'PPS 5-day', or 'OBRA' representing the assessment type
 
 And the payment groups will be generated for you.
@@ -366,8 +366,7 @@ as well as an NTA component adjustment factor:
 
 **Total daily price computation**
 
-Using the above values, we can calculate the per-diem reimbursement value using the following formula:
+Using the above values, we can calculate the per-diem reimbursement from day 0 to n using the following formula:
 
-(âˆ‘_(i=1)^n BaseRate_i*CMI_i*AdjustmentFactor_i)+NonCaseMix  
-
+(:math:`\sum_{i=0}^n` :math:`BaseRate_i` * :math:`CMI_i` * :math:`AdjustmentFactor_i`) + :math:`NonCaseMix`
 
