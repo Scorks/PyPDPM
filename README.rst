@@ -295,4 +295,4 @@ As well, there is an NTA component adjustment factor, as demonstrated in the tab
 
 **Total daily price computation**
 
-price = :math:`(\\sum_{i=0}^{n}BaseRate_i * CMI_i * AdjustmentFactor_i) + NonCaseMix`
+price = :math:`\\sum_{i=0}^{n}BaseRate_i * CMI_i * AdjustmentFactor_i + NonCaseMix`
