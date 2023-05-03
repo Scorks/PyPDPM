@@ -1,4 +1,4 @@
-PyPDPM
+**PyPDPM**
 
 .. image:: https://img.shields.io/pypi/v/icd.svg
     :target: https://pypi.python.org/pypi/icd
@@ -11,17 +11,66 @@ If you are interested in helping contribute to this repository, or have any ques
 
 Usage
 -----
-Basic usage includes three primary tasks while dealing with PDPM HIPPS codes. 
+Basic usage includes three primary tasks:
 
-- Retrieving reimbursement amounts for specific HIPPS codes
-- Generating HIPPS codes from patient information
+- Retrieving reimbursement amounts for specific HIPPS codes (whether for a specific day or from the admit date to a specific day in the stay)
+- Generating HIPPS codes from patient information (either using payment groups or specific patient PHI)
 - Generating patient information from HIPPS codes
 
+To get a PDPM HIPPS code from a patient's payment groups and then get the reimbursement amount for accumulated for days 0 to 30 of their stay, you can write:
+
+.. code-block:: python
+  
+  from PyPDPM import HIPPS
+
+  code = get_PDPM_HIPPS_code('TK', 'SB', 'LBC1', 'NE', 1)
+  reimbursement = calculateTotalReimbursement(code, 30)
+
+If you instead want to get the reimbursement about for a specific day, you could instead write:
+
+.. code-block:: python
+
+  reimbursement = getReimbursementAmount(code, 30)
+
+The reimbursement functions assume an urban facility in the year 2022, but these can be adjusted by changing the values for the 'urban' and 'year' parameters.
+
+It is important to note that you do not need to provide the payment groups for get_PDPM_HIPPS_code if you do not have them. You can instead pass:
+
+- ICD10CM_primaryDiagnosisCode : str
+        Primary diagnosis of the patient
+
+- section_GG_function_score : int
+        The section GG functional range score (standardized tool that measures the functional status and goals of the resident in various areas, including self-care, mobility, and communication)
+
+- ICD10CM_SLP_Codes : list
+        List of ICD-10-CM does that are potential comorbidities
+
+- cognitiveImpairment : bool
+        Boolean value representing whether a patient has cognitive impairment
+
+- acuteNeurologicalCondition : bool
+        Boolean value representing whether a patient has an acute neurological condition
+
+- mechanicallyAlteredDiet : bool
+        Boolean value representing whether a patient has a mechanically altered diet
+
+- swallowingDisorder : bool
+        Boolean value representing whether a patient has a swallowing disorder
+
+- ICD10CM_Codes : list
+        list of secondary diagnoses associated with a patient for NTA payment group calculation
+
+- nursingPaymentGroup : str
+        The CMG for a particular patient
+
+- assessmentType : str
+        'IPA', 'PPS 5-day', or 'OBRA' representing the assessment type
+
+And the payment groups will be generated for you.
 
 **PDPM Mappings**
 
 Revenue per diem for Medicare patients is calculated through PDPM HIPPS codes. The table below summarizes each component of the HIPPS codes where columns 1 to 4 represent the payment groups for characters 1-4 (of five) in the PDPM HIPPS code:
-
 
 +------------+------------+-----------+------------+------------+
 |    PT/OT   |     SLP    |    NURS   |     NPG    | Code Value |
@@ -87,11 +136,11 @@ The fifth character is represented by the assessment type, demonstrated by the f
 |     PPS 5-Day Assessment     |         1         |
 +------------------------------+-------------------+
 
+Using the above tables, it is clear that the code 'KBQE1', for example, can be broken down into its unique payment groups. In this case, TK-SB-LBC1-NE using PPS 5-Day Assessment. For more information on what these payment groups mean and how they are selected, continue on to the following section.
 
+-----------------------------------------------------------
 
-Case-Mix Index (CMI) values for each character
-------------------------------------------
-
+**Case-Mix Index (CMI) values for each character**
 
 It is important to note that 'clinical category' originally has ten unique categories based on primary diagnosis. These ten categories are then grouped into four PT/OT categories (shown below in the leftmost column).
 
@@ -239,7 +288,6 @@ The following table shows, based on NTA score range, which NTA payment group a p
 
 --------------------------------------------------------------
 
-
 Additionally, for reimbursement calculation, the unadjusted federal rates per diem are taken into account (for both urban and rural facilities) as shown below:
 
 Urban:
@@ -258,9 +306,9 @@ Rural:
 | Per Diem Amount | $71.63 | $65.79 | $29.56 | $104.66 | $78.96 | $99.91              |
 +-----------------+--------+--------+--------+---------+--------+---------------------+
 
+-----------------------------------------------------------------
 
-
-Finally, there is an adjustment factor applied per-diem, as demonstrated in the table below:
+Finally, there is an adjustment factor applied per-diem:
 
 +-------------+--------------------+
 | Day in Stay | Adjustment Factor  |
@@ -292,7 +340,7 @@ Finally, there is an adjustment factor applied per-diem, as demonstrated in the 
 | 98-150      | 0.76               |
 +-------------+--------------------+
 
-As well, there is an NTA component adjustment factor, as demonstrated in the table below:
+as well as an NTA component adjustment factor:
 
 +-------------+--------------------+
 | Day in Stay | Adjustment Factor  |
@@ -302,6 +350,10 @@ As well, there is an NTA component adjustment factor, as demonstrated in the tab
 | 4-150       | 1.00               |
 +-------------+--------------------+
 
+-----------------------------------------------------
+
 **Total daily price computation**
+
+Using the above values, we can calculate the per-diem reimbursement value using the following formula:
 
 (∑_(i=1)^n BaseRate_i*CMI_i*AdjustmentFactor_i)+NonCaseMix  
