@@ -87,7 +87,11 @@ The fifth character is represented by the assessment type, demonstrated by the f
 |     PPS 5-Day Assessment     |         1         |
 +------------------------------+-------------------+
 
-**Case-Mix Index (CMI) values for each character**
+
+
+Case-Mix Index (CMI) values for each character
+------------------------------------------
+
 
 It is important to note that 'clinical category' originally has ten unique categories based on primary diagnosis. These ten categories are then grouped into four PT/OT categories (shown below in the leftmost column).
 
@@ -233,6 +237,9 @@ The following table shows, based on NTA score range, which NTA payment group a p
 | 0               | NF                 | 0.72  |
 +-----------------+--------------------+-------+
 
+--------------------------------------------------------------
+
+
 Additionally, for reimbursement calculation, the unadjusted federal rates per diem are taken into account (for both urban and rural facilities) as shown below:
 
 Urban:
@@ -250,6 +257,8 @@ Rural:
 +=================+========+========+========+=========+========+=====================+
 | Per Diem Amount | $71.63 | $65.79 | $29.56 | $104.66 | $78.96 | $99.91              |
 +-----------------+--------+--------+--------+---------+--------+---------------------+
+
+
 
 Finally, there is an adjustment factor applied per-diem, as demonstrated in the table below:
 
