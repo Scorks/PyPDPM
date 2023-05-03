@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PyPDPM
-Version: 0.0.5.15
+Version: 0.0.5.16
 Summary: A Python library for dealing with PDPM HIPP codes
 Home-page: https://github.com/Scorks/PyPDPM
 Author: Caro Strickland
@@ -10,7 +10,7 @@ Keywords: PDPM,HIPPS,ICD-10-CM Codes
 Platform: UNKNOWN
 License-File: LICENSE.txt
 
-PyPDPM
+**PyPDPM**
 
 .. image:: https://img.shields.io/pypi/v/icd.svg
     :target: https://pypi.python.org/pypi/icd
@@ -23,18 +23,66 @@ If you are interested in helping contribute to this repository, or have any ques
 
 Usage
 -----
-Basic usage includes three primary tasks while dealing with PDPM HIPPS codes. 
+Basic usage includes three primary tasks:
 
-- Retrieving reimbursement amounts for specific HIPPS codes
-- Generating HIPPS codes from patient information
+- Retrieving reimbursement amounts for specific HIPPS codes (whether for a specific day or from the admit date to a specific day in the stay)
+- Generating HIPPS codes from patient information (either using payment groups or specific patient PHI)
 - Generating patient information from HIPPS codes
 
+To get a PDPM HIPPS code from a patient's payment groups and then get the reimbursement amount for accumulated for days 0 to 30 of their stay, you can write:
+
+.. code-block:: python
+  
+  from PyPDPM import HIPPS
+
+  code = get_PDPM_HIPPS_code('TK', 'SB', 'LBC1', 'NE', 1)
+  reimbursement = calculateTotalReimbursement(code, 30)
+
+If you instead want to get the reimbursement about for a specific day, you could instead write:
+
+.. code-block:: python
+
+  reimbursement = getReimbursementAmount(code, 30)
+
+The reimbursement functions assume an urban facility in the year 2022, but these can be adjusted by changing the values for the 'urban' and 'year' parameters.
+
+It is important to note that you do not need to provide the payment groups for get_PDPM_HIPPS_code if you do not have them. You can instead pass:
+
+- ICD10CM_primaryDiagnosisCode : str
+        Primary diagnosis of the patient
+
+- section_GG_function_score : int
+        The section GG functional range score (standardized tool that measures the functional status and goals of the resident in various areas, including self-care, mobility, and communication)
+
+- ICD10CM_SLP_Codes : list
+        List of ICD-10-CM does that are potential comorbidities
+
+- cognitiveImpairment : bool
+        Boolean value representing whether a patient has cognitive impairment
+
+- acuteNeurologicalCondition : bool
+        Boolean value representing whether a patient has an acute neurological condition
+
+- mechanicallyAlteredDiet : bool
+        Boolean value representing whether a patient has a mechanically altered diet
+
+- swallowingDisorder : bool
+        Boolean value representing whether a patient has a swallowing disorder
+
+- ICD10CM_Codes : list
+        list of secondary diagnoses associated with a patient for NTA payment group calculation
+
+- nursingPaymentGroup : str
+        The CMG for a particular patient
+
+- assessmentType : str
+        'IPA', 'PPS 5-day', or 'OBRA' representing the assessment type
+
+And the payment groups will be generated for you.
 
 **PDPM Mappings**
 
-
-Revenue per diem for Medicare patients is calculated through PDPM HIPPS codes. The table below summarizes each component of the HIPPS codes where columns 1 to 4 represent the payment groups for characters 1-4 (of five) in the PDPM HIPPS code.
-
+Revenue per diem for Medicare patients is calculated through PDPM HIPPS codes. The table below summarizes each component of the HIPPS codes where columns 1 to 4 represent the payment groups for characters 1-4 (of five) in the PDPM HIPPS code:
 
 +------------+------------+-----------+------------+------------+
 |    PT/OT   |     SLP    |    NURS   |     NPG    | Code Value |
@@ -89,5 +137,237 @@ Revenue per diem for Medicare patients is calculated through PDPM HIPPS codes. T
 +------------+------------+-----------+------------+------------+
 |            |            |    PA1    |            |      Y     |
 +------------+------------+-----------+------------+------------+
+
+The fifth character is represented by the assessment type, demonstrated by the following table:
+
++------------------------------+-------------------+
+|        Assessment Type       |     Code Value    |
++==============================+===================+
+|  Initial Patient Assessment  |         0         |
++------------------------------+-------------------+
+|     PPS 5-Day Assessment     |         1         |
++------------------------------+-------------------+
+
+Using the above tables, it is clear that the code 'KBQE1', for example, can be broken down into its unique payment groups. In this case, TK-SB-LBC1-NE using PPS 5-Day Assessment. For more information on what these payment groups mean and how they are selected, continue on to the following section.
+
+-----------------------------------------------------------
+
+**Case-Mix Index (CMI) values for each character**
+
+It is important to note that 'clinical category' originally has ten unique categories based on primary diagnosis. These ten categories are then grouped into four PT/OT categories (shown below in the leftmost column).
+
+The following table shows, for the clinical category and PT/OT function score of a patient, which PT/OT payment group they fall into as well as their PT and OT CMI values:
+
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Clinical Category                           | PT & OT Function Score | PT & OT Case Mix Group | PT CMI | OT CMI  |
++=============================================+========================+========================+========+=========+
+| Major Joint Replacement or Spinal Surgery   | 0-5                    | TA                     | 1.53   | 1.49    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Major Joint Replacement or Spinal Surgery   | 6-9                    | TB                     | 1.69   | 1.63    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Major Joint Replacement or Spinal Surgery   | 10-23                  | TC                     | 1.88   | 1.68    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Major Joint Replacement or Spinal Surgery   | 24                     | TD                     | 1.92   | 1.53    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Other Orthopedic                            | 0-5                    | TE                     | 1.42   | 1.41    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Other Orthopedic                            | 6-9                    | TF                     | 1.61   | 1.59    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Other Orthopedic                            | 10-23                  | TG                     | 1.67   | 1.64    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Other Orthopedic                            | 24                     | TH                     | 1.16   | 1.15    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Medical Management                          | 0-5                    | TI                     | 1.13   | 1.17    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Medical Management                          | 6-9                    | TJ                     | 1.42   | 1.44    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Medical Management                          | 10-23                  | TK                     | 1.52   | 1.54    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Medical Management                          | 24                     | TL                     | 1.09   | 1.11    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Non-Orthopedic Surgery and Acute Neurologic | 0-5                    | TM                     | 1.27   | 1.30    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Non-Orthopedic Surgery and Acute Neurologic | 6-9                    | TN                     | 1.48   | 1.49    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Non-Orthopedic Surgery and Acute Neurologic | 10-23                  | TO                     | 1.55   | 1.55    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+| Non-Orthopedic Surgery and Acute Neurologic | 24                     | TP                     | 1.08   | 1.09    |
++---------------------------------------------+------------------------+------------------------+--------+---------+
+
+The following table shows, based on the presence of an acute neurological condition, SLP-related comorbidity, cognitive impairment, or mechanically altered diet or swallowing disorder, which SLP payment group a patient falls into as well as their SLP CMI value:
+
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| Presence of Acute Neurological Condition, SLP-Related Comorbidity, or Cognitive Impairment | Mechanically Altered Diet or Swallowing Disorder | SLP Case Mix Group | SLP CMI  |
++============================================================================================+==================================================+====================+==========+
+| None                                                                                       | Neither                                          | SA                 | 0.68     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| None                                                                                       | Either                                           | SB                 | 1.82     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| None                                                                                       | Both                                             | SC                 | 2.66     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| Any One                                                                                    | Neither                                          | SD                 | 1.46     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| Any One                                                                                    | Either                                           | SE                 | 2.33     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| Any One                                                                                    | Both                                             | SF                 | 2.97     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| Any Two                                                                                    | Neither                                          | SG                 | 2.04     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| Any Two                                                                                    | Either                                           | SH                 | 2.85     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| Any Two                                                                                    | Both                                             | SI                 | 3.51     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| All Three                                                                                  | Neither                                          | SJ                 | 2.98     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| All Three                                                                                  | Either                                           | SK                 | 3.69     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+| All Three                                                                                  | Both                                             | SL                 | 4.19     |
++--------------------------------------------------------------------------------------------+--------------------------------------------------+--------------------+----------+
+
+The following table shows, based on extensive services, clinical conditions, depression status, restorative nursing services, and function score, which NURSING payment group a patient falls into as well as their NURSING CMI value:
+
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| RUG-IV Nursing RUG | Extensive Services         | Clinical Conditions                                                              | Depression | Restorative Nursing Services | Function Score | CMG  | CMI   |
++====================+============================+==================================================================================+============+==============================+================+======+=======+
+| ES3                | Tracheostomy & Ventilator  | ---                                                                              |            |                              | 0-14           | ES3  | 4.04  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| ES2                | Tracheostomy or Ventilator | ---                                                                              |            |                              | 0-14           | ES2  | 3.06  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| ES1                | Infection Isolation        | ---                                                                              |            |                              | 0-14           | ES1  | 2.91  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| HE2/HD2            |                            | Serious medical conditions e.g. comatose or respiratory therapy                  | Yes        |                              | 0-5            | HDE2 | 2.39  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| HE1/HD1            |                            | Serious medical conditions e.g. comatose or respiratory therapy                  | No         |                              | 0-5            | HDE1 | 1.99  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| HC2/HB2            |                            | Serious medical conditions e.g. comatose or respiratory therapy                  | Yes        |                              | 6-14           | HBC2 | 2.23  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| HC1/HB1            |                            | Serious medical conditions e.g. comatose or respiratory therapy                  | No         |                              | 6-14           | HBC1 | 1.85  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| LE2/LD2            |                            | Serious medical conditions e.g. radiation therapy or dialysis                    | Yes        |                              | 0-5            | LDE2 | 2.07  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| LE1/LD1            |                            | Serious medical conditions e.g. radiation therapy or dialysis                    | No         |                              | 0-5            | LDE1 | 1.72  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| LC2/LB2            |                            | Serious medical conditions e.g. radiation therapy or dialysis                    | Yes        |                              | 6-14           | LBC2 | 1.71  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| LC1/LB1            |                            | Serious medical conditions e.g. radiation therapy or dialysis                    | No         |                              | 6-14           | LBC1 | 1.43  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| CE2/CD2            |                            | Conditions requiring complex medical care e.g. pneumonia, surgical wounds, burns | Yes        |                              | 0-5            | CDE2 | 1.86  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| CE1/CD1            |                            | Conditions requiring complex medical care e.g. pneumonia, surgical wounds, burns | No         |                              | 905            | CDE1 | 1.62  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| CC2/CB2            |                            | Conditions requiring complex medical care e.g. pneumonia, surgical wounds, burns | Yes        |                              | 6-14           | CBC2 | 1.54  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| CA2                |                            | Conditions requiring complex medical care e.g. pneumonia, surgical wounds, burns | Yes        |                              | 15-16          | CA2  | 1.08  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| CC1/CB1            |                            | Conditions requiring complex medical care e.g. pneumonia, surgical wounds, burns | No         |                              | 6-14           | CBC1 | 1.34  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| CA1                |                            | Conditions requiring complex medical care e.g. pneumonia, surgical wounds, burns | No         |                              | 15-16          | CA1  | 0.94  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| BB2/BA2            |                            | Behavioral or cognitive symptoms                                                 |            | 2 or more                    | 11-16          | BAB2 | 1.04  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| BB1/BA1            |                            | Behavioral or cognitive symptoms                                                 |            | 0-1                          | 11-16          | BAB1 | 0.99  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| PE2/PD2            |                            | Assistance with daily living and general supervision                             |            | 2 or more                    | 0-5            | PDE2 | 1.57  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| PE1/PD1            |                            | Assistance with daily living and general supervision                             |            | 0-1                          | 0-5            | PDE1 | 1.47  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| PC2/PB2            |                            | Assistance with daily living and general supervision                             |            | 2 or more                    | 6-14           | PBC2 | 1.21  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| PA2                |                            | Assistance with daily living and general supervision                             |            | 2 or more                    | 15-16          | PA2  | 0.7   |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| PC1/PB1            |                            | Assistance with daily living and general supervision                             |            | 0-1                          | 6-14           | PBC1 | 1.13  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+| PA1                |                            | Assistance with daily living and general supervision                             |            | 0-1                          | 15-16          | PA1  | 0.66  |
++--------------------+----------------------------+----------------------------------------------------------------------------------+------------+------------------------------+----------------+------+-------+
+
+The following table shows, based on NTA score range, which NTA payment group a patient falls into as well as their NTA CMI value:
+
++-----------------+--------------------+-------+
+| NTA Score Range | NTA Case Mix Group | CMI   |
++=================+====================+=======+
+| 12+             | NA                 | 3.25  |
++-----------------+--------------------+-------+
+| 9-11            | NB                 | 2.53  |
++-----------------+--------------------+-------+
+| 6-8             | NC                 | 1.85  |
++-----------------+--------------------+-------+
+| 3-5             | ND                 | 1.34  |
++-----------------+--------------------+-------+
+| 1-2             | NE                 | 0.96  |
++-----------------+--------------------+-------+
+| 0               | NF                 | 0.72  |
++-----------------+--------------------+-------+
+
+--------------------------------------------------------------
+
+Additionally, for reimbursement calculation, the unadjusted federal rates per diem are taken into account (for both urban and rural facilities) as shown below:
+
+Urban:
+
++-----------------+--------+--------+--------+---------+--------+---------------------+
+| Rate Component  | PT     | OT     | SLP    | Nursing | NTA    | Non-Case-Mix (NCM)  |
++=================+========+========+========+=========+========+=====================+
+| Per Diem Amount | $62.84 | $58.49 | $23.46 | $109.55 | $82.64 | $98.10              |
++-----------------+--------+--------+--------+---------+--------+---------------------+
+
+Rural:
+
++-----------------+--------+--------+--------+---------+--------+---------------------+
+| Rate Component  | PT     | OT     | SLP    | Nursing | NTA    | Non-Case-Mix (NCM)  |
++=================+========+========+========+=========+========+=====================+
+| Per Diem Amount | $71.63 | $65.79 | $29.56 | $104.66 | $78.96 | $99.91              |
++-----------------+--------+--------+--------+---------+--------+---------------------+
+
+-----------------------------------------------------------------
+
+Finally, there is an adjustment factor applied per-diem:
+
++-------------+--------------------+
+| Day in Stay | Adjustment Factor  |
++=============+====================+
+| 1-20        | 1.00               |
++-------------+--------------------+
+| 21-27       | 0.98               |
++-------------+--------------------+
+| 28-34       | 0.96               |
++-------------+--------------------+
+| 35-41       | 0.94               |
++-------------+--------------------+
+| 42-48       | 0.92               |
++-------------+--------------------+
+| 49-55       | 0.90               |
++-------------+--------------------+
+| 56-62       | 0.88               |
++-------------+--------------------+
+| 63-69       | 0.86               |
++-------------+--------------------+
+| 70-76       | 0.84               |
++-------------+--------------------+
+| 77-83       | 0.82               |
++-------------+--------------------+
+| 84-90       | 0.80               |
++-------------+--------------------+
+| 91-97       | 0.78               |
++-------------+--------------------+
+| 98-150      | 0.76               |
++-------------+--------------------+
+
+as well as an NTA component adjustment factor:
+
++-------------+--------------------+
+| Day in Stay | Adjustment Factor  |
++=============+====================+
+| 1-3         | 3.00               |
++-------------+--------------------+
+| 4-150       | 1.00               |
++-------------+--------------------+
+
+-----------------------------------------------------
+
+**Total daily price computation**
+
+Using the above values, we can calculate the per-diem reimbursement value using the following formula:
+
+(âˆ‘_(i=1)^n BaseRate_i*CMI_i*AdjustmentFactor_i)+NonCaseMix  
 
 
