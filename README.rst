@@ -295,4 +295,6 @@ As well, there is an NTA component adjustment factor, as demonstrated in the tab
 
 **Total daily price computation**
 
-price = :math:`\sum_{i=1}^{n} x_i`
+.. math::
+
+   \sum_{i=1}^n x_i
