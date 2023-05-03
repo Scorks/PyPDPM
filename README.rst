@@ -1,12 +1,11 @@
 PyPDPM
-===
 
 .. image:: https://img.shields.io/pypi/v/icd.svg
     :target: https://pypi.python.org/pypi/icd
     :alt: Latest PyPI version
 
 
-Tools for working with the CMS case-mix classification model, payment driven payment model (PDPM). Deatils about PDPM can be found here: `https://www.cms.gov/medicare/medicare-fee-for-service-payment/snfpps/pdpm`_.
+Tools for working with the CMS case-mix classification model, payment driven payment model (PDPM). Deatils about PDPM can be found here: https://www.cms.gov/medicare/medicare-fee-for-service-payment/snfpps/pdpm.
 
 If you are interested in helping contribute to this repository, or have any questions, feel free to `send me an email <carostrickland321@gmail.com>`_.
 
@@ -18,8 +17,6 @@ Basic usage includes three primary tasks while dealing with PDPM HIPPS codes.
 - Generating HIPPS codes from patient information
 - Generating patient information from HIPPS codes
 
-|
-|
 
 **PDPM Mappings**
 
@@ -28,7 +25,7 @@ Revenue per diem for Medicare patients is calculated through PDPM HIPPS codes. T
 
 
 +------------+------------+-----------+------------+------------+
-| PT/OT Payment Group | SLP Payment Group  | Nursing Payment Group  |  NTA Payment Group  |  HIPPS Code Value   |
+|    PT/OT   |     SLP    |    NURS   |     NPG    | Code Value |
 +============+============+===========+============+============+
 |     TA     |     SA     |    ES3    |     NA     |      A     |
 +------------+------------+-----------+------------+------------+
@@ -80,17 +77,3 @@ Revenue per diem for Medicare patients is calculated through PDPM HIPPS codes. T
 +------------+------------+-----------+------------+------------+
 |            |            |    PA1    |            |      Y     |
 +------------+------------+-----------+------------+------------+
-
-
-The fifth character of the PDPM HIPPS code is based on the assessment type below.
-
-
-+------------+-----------+
-| Assessment Type | HIPPS Code Value |
-+============+===========+
-| Initial Patient Assessment | 0 |
-+------------+-----------+
-| PPS 5-Day Assessment |  1   |
-+------------+-----------+
-| Omnibus Budget Reconciliation Act |  6   |
-+------------+-----------+

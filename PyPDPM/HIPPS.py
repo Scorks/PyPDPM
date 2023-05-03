@@ -1,7 +1,15 @@
+import os
 import sys
-sys.path.append('..')
+import json
 
-from data import mappings
+# sys.path.append('..')
+
+script_dir = os.path.dirname(__file__)
+
+mapping_clinical_category = json.load(open(os.path.join(script_dir, 'data\\PDPM_ICD10_Mappings_FY2020_clinical_category.json')))
+mapping_NTA = json.load(open(os.path.join(script_dir, 'data\\PDPM_ICD10_Mappings_FY2020_NTA.json')))
+mapping_SLP = json.load(open(os.path.join(script_dir, 'data\\PDPM_ICD10_Mappings_FY2020_SLP.json')))
+
 
 PAYMENT_GROUP_TO_HIPPS_CODE_VALUE = {('TA', 'SA', 'ES3', 'NA'): 'A', ('TB', 'SB', 'ES2', 'NB'): 'B',
                                      ('TC', 'SC', 'ES1', 'NC'): 'C', ('TD', 'SD', 'HDE2', 'ND'): 'D',
@@ -151,7 +159,7 @@ def calculateTotalReimbursement(HIPPScode: str, lengthOfStay: int, urban: bool =
 def _get_PT_OT_ClinicalCategory(ICD10CM_Code: str) -> str:
     """
     
-    Convert ICD10CM_Code to PDPM Clinical Category using mappings.PDPM_ICD10_Mappings_FY2020_clinical_category, and then convert to PT & OT Clinical Categories.
+    Convert ICD10CM_Code to PDPM Clinical Category using PDPM_ICD10_Mappings_FY2020_clinical_category, and then convert to PT & OT Clinical Categories.
 
     Parameters
     ----------
@@ -167,8 +175,8 @@ def _get_PT_OT_ClinicalCategory(ICD10CM_Code: str) -> str:
 
     ICD10CM_Code = ICD10CM_Code.replace('.', '').strip()
 
-    if ICD10CM_Code in mappings.PDPM_ICD10_Mappings_FY2020_clinical_category:
-        PDPM_clinical_category = mappings.PDPM_ICD10_Mappings_FY2020_clinical_category[ICD10CM_Code]
+    if ICD10CM_Code in mapping_clinical_category:
+        PDPM_clinical_category = mapping_clinical_category[ICD10CM_Code]
         if PDPM_clinical_category in ['Acute Infections', 'Medical Management', 'Cancer', 'Pulmonary', 'Cardiovascular and Coagulations']:
             return 'Medical Management'
         elif PDPM_clinical_category in ['Non-Surgical Orthopedic/Musculoskeletal', 'Orthopedic Surgery (Except Major Joint Replacement or Spinal Surgery)']:
@@ -299,7 +307,7 @@ def _get_SLP_CaseMixClassificationGroup(cognitiveImpairment: bool, acuteNeurolog
     """
 
     for comorbidity in ICD10CM_Codes:
-        if comorbidity.replace('.', '').strip() in mappings.PDPM_ICD10_Mappings_FY2020_SLP:
+        if comorbidity.replace('.', '').strip() in mapping_SLP:
             comorbidityFlag = True
         else:
             comorbidityFlag = False
@@ -376,8 +384,8 @@ def _get_NTA_PaymentGroup(ICD10CM_Codes: list) -> str:
         
     NTA_score = 0
     for item in ICD10CM_Codes:
-        if item in mappings.PDPM_ICD10_Mappings_FY2020_NTA:
-            value = mappings.PDPM_ICD10_Mappings_FY2020_NTA[item]
+        if item in mapping_NTA:
+            value = mapping_NTA[item]
             if value == 'HIV/AIDS':
                 NTA_score += 8
             elif value == 'Major Organ Transplant Status, Except Lung':
@@ -600,4 +608,3 @@ print(code)
 print(getReimbursementAmount(code, 4))
 print(calculateTotalReimbursement(code, 30))
 '''
-print(getReimbursementAmount('AAAA1', 2))

@@ -1,5 +1,6 @@
 LICENSE.txt
-README.md
+README.rst
+setup.cfg
 setup.py
 PyPDPM/HIPPS.py
 PyPDPM/__init__.py
@@ -7,3 +8,6 @@ PyPDPM.egg-info/PKG-INFO
 PyPDPM.egg-info/SOURCES.txt
 PyPDPM.egg-info/dependency_links.txt
 PyPDPM.egg-info/top_level.txt
+PyPDPM/data/PDPM_ICD10_Mappings_FY2020_NTA.json
+PyPDPM/data/PDPM_ICD10_Mappings_FY2020_SLP.json
+PyPDPM/data/PDPM_ICD10_Mappings_FY2020_clinical_category.json

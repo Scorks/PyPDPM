@@ -1,0 +1,5380 @@
+{
+    "B20": [
+        "HIV/AIDS"
+    ],
+    "T8630": [
+        "Lung Transplant Status",
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8631": [
+        "Lung Transplant Status",
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8632": [
+        "Lung Transplant Status",
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8633": [
+        "Lung Transplant Status",
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8639": [
+        "Lung Transplant Status",
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T86810": [
+        "Lung Transplant Status"
+    ],
+    "T86811": [
+        "Lung Transplant Status"
+    ],
+    "T86812": [
+        "Lung Transplant Status"
+    ],
+    "T86818": [
+        "Lung Transplant Status"
+    ],
+    "T86819": [
+        "Lung Transplant Status"
+    ],
+    "Z4824": [
+        "Lung Transplant Status"
+    ],
+    "Z48280": [
+        "Lung Transplant Status",
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z942": [
+        "Lung Transplant Status"
+    ],
+    "Z943": [
+        "Lung Transplant Status",
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8610": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8611": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8612": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8613": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8619": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z4822": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z940": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "D89810": [
+        "Major Organ Transplant Status, Except Lung",
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D89811": [
+        "Major Organ Transplant Status, Except Lung",
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D89812": [
+        "Major Organ Transplant Status, Except Lung",
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D89813": [
+        "Major Organ Transplant Status, Except Lung",
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "T8600": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8601": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8602": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8603": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8609": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8620": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8621": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8622": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8623": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T86290": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T86298": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8640": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8641": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8642": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8643": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T8649": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T865": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T86850": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T86851": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T86852": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T86858": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "T86859": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z4821": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z4823": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z48290": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z941": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z944": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z9481": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z9482": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z9484": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "Z9483": [
+        "Major Organ Transplant Status, Except Lung"
+    ],
+    "A072": [
+        "Opportunistic Infections"
+    ],
+    "A310": [
+        "Opportunistic Infections"
+    ],
+    "A312": [
+        "Opportunistic Infections"
+    ],
+    "B250": [
+        "Opportunistic Infections"
+    ],
+    "B251": [
+        "Opportunistic Infections"
+    ],
+    "B252": [
+        "Opportunistic Infections"
+    ],
+    "B258": [
+        "Opportunistic Infections"
+    ],
+    "B259": [
+        "Opportunistic Infections"
+    ],
+    "B371": [
+        "Opportunistic Infections"
+    ],
+    "B377": [
+        "Opportunistic Infections"
+    ],
+    "B3781": [
+        "Opportunistic Infections"
+    ],
+    "B440": [
+        "Opportunistic Infections"
+    ],
+    "B441": [
+        "Opportunistic Infections"
+    ],
+    "B442": [
+        "Opportunistic Infections"
+    ],
+    "B447": [
+        "Opportunistic Infections"
+    ],
+    "B4489": [
+        "Opportunistic Infections"
+    ],
+    "B449": [
+        "Opportunistic Infections"
+    ],
+    "B450": [
+        "Opportunistic Infections"
+    ],
+    "B451": [
+        "Opportunistic Infections"
+    ],
+    "B452": [
+        "Opportunistic Infections"
+    ],
+    "B453": [
+        "Opportunistic Infections"
+    ],
+    "B457": [
+        "Opportunistic Infections"
+    ],
+    "B458": [
+        "Opportunistic Infections"
+    ],
+    "B459": [
+        "Opportunistic Infections"
+    ],
+    "B460": [
+        "Opportunistic Infections"
+    ],
+    "B461": [
+        "Opportunistic Infections"
+    ],
+    "B462": [
+        "Opportunistic Infections"
+    ],
+    "B463": [
+        "Opportunistic Infections"
+    ],
+    "B464": [
+        "Opportunistic Infections"
+    ],
+    "B465": [
+        "Opportunistic Infections"
+    ],
+    "B468": [
+        "Opportunistic Infections"
+    ],
+    "B469": [
+        "Opportunistic Infections"
+    ],
+    "B484": [
+        "Opportunistic Infections"
+    ],
+    "B488": [
+        "Opportunistic Infections"
+    ],
+    "B582": [
+        "Opportunistic Infections"
+    ],
+    "B583": [
+        "Opportunistic Infections"
+    ],
+    "B59": [
+        "Opportunistic Infections"
+    ],
+    "A0104": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A0105": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A0223": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A0224": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A3983": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A3984": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A5055": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A5440": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A5441": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A5442": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A5443": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A5449": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A666": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "A6923": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "B0682": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "B2685": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "B4282": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0000": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00011": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00012": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00019": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00021": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00022": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00029": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00031": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00032": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00039": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00041": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00042": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00049": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00051": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00052": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00059": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00061": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00062": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00069": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00071": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00072": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00079": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0008": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0009": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0010": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00111": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00112": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00119": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00121": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00122": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00129": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00131": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00132": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00139": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00141": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00142": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00149": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00151": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00152": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00159": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00161": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00162": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00169": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00171": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00172": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00179": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0018": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0019": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0020": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00211": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00212": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00219": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00221": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00222": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00229": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00231": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00232": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00239": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00241": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00242": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00249": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00251": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00252": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00259": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00261": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00262": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00269": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00271": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00272": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00279": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0028": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0029": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0080": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00811": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00812": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00819": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00821": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00822": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00829": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00831": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00832": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00839": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00841": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00842": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00849": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00851": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00852": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00859": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00861": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00862": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00869": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00871": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00872": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M00879": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0088": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0089": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M009": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X0": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X11": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X12": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X19": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X21": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X22": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X29": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X31": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X32": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X39": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X41": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X42": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X49": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X51": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X52": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X59": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X61": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X62": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X69": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X71": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X72": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X79": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X8": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M01X9": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0210": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02111": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02112": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02119": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02121": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02122": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02129": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02131": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02132": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02139": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02141": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02142": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02149": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02151": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02152": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02159": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02161": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02162": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02169": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02171": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02172": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02179": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0218": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0219": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0280": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02811": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02812": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02819": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02821": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02822": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02829": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02831": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02832": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02839": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02841": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02842": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02849": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02851": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02852": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02859": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02861": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02862": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02869": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02871": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02872": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M02879": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0288": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M0289": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M029": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4620": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4621": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4622": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4623": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4624": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4625": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4626": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4627": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4628": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4630": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4631": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4632": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4633": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4634": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4635": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4636": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4637": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4638": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M4639": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M726": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8600": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86011": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86012": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86019": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86021": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86022": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86029": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86031": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86032": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86039": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86041": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86042": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86049": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86051": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86052": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86059": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86061": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86062": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86069": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86071": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86072": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86079": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8608": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8609": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8610": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86111": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86112": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86119": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86121": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86122": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86129": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86131": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86132": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86139": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86141": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86142": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86149": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86151": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86152": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86159": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86161": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86162": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86169": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86171": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86172": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86179": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8618": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8619": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8620": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86211": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86212": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86219": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86221": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86222": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86229": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86231": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86232": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86239": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86241": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86242": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86249": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86251": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86252": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86259": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86261": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86262": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86269": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86271": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86272": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86279": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8628": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8629": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8630": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86311": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86312": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86319": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86321": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86322": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86329": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86331": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86332": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86339": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86341": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86342": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86349": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86351": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86352": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86359": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86361": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86362": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86369": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86371": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86372": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86379": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8638": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8639": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8640": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86411": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86412": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86419": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86421": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86422": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86429": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86431": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86432": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86439": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86441": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86442": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86449": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86451": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86452": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86459": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86461": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86462": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86469": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86471": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86472": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86479": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8648": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8649": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8650": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86511": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86512": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86519": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86521": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86522": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86529": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86531": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86532": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86539": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86541": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86542": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86549": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86551": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86552": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86559": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86561": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86562": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86569": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86571": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86572": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86579": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8658": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8659": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8660": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86611": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86612": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86619": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86621": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86622": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86629": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86631": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86632": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86639": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86641": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86642": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86649": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86651": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86652": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86659": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86661": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86662": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86669": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86671": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86672": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M86679": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8668": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8669": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X0": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X1": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X2": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X3": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X4": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X5": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X6": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X7": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X8": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M868X9": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M869": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8960": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89611": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89612": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89619": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89621": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89622": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89629": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89631": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89632": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89639": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89641": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89642": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89649": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89651": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89652": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89659": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89661": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89662": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89669": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89671": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89672": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M89679": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8968": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "M8969": [
+        "Bone/Joint/Muscle Infections/Necrosis - Except : RxCC80: Aseptic Necrosis of Bone"
+    ],
+    "C9210": [
+        "Chronic Myeloid Leukemia"
+    ],
+    "C9211": [
+        "Chronic Myeloid Leukemia"
+    ],
+    "C9212": [
+        "Chronic Myeloid Leukemia"
+    ],
+    "A0102": [
+        "Endocarditis"
+    ],
+    "A1884": [
+        "Endocarditis"
+    ],
+    "A3282": [
+        "Endocarditis"
+    ],
+    "A3951": [
+        "Endocarditis"
+    ],
+    "A5203": [
+        "Endocarditis"
+    ],
+    "A78": [
+        "Endocarditis"
+    ],
+    "B3321": [
+        "Endocarditis"
+    ],
+    "B376": [
+        "Endocarditis"
+    ],
+    "I330": [
+        "Endocarditis"
+    ],
+    "I339": [
+        "Endocarditis"
+    ],
+    "I38": [
+        "Endocarditis"
+    ],
+    "I39": [
+        "Endocarditis"
+    ],
+    "M3211": [
+        "Endocarditis",
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "D800": [
+        "Immune Disorders"
+    ],
+    "D801": [
+        "Immune Disorders"
+    ],
+    "D802": [
+        "Immune Disorders"
+    ],
+    "D803": [
+        "Immune Disorders"
+    ],
+    "D804": [
+        "Immune Disorders"
+    ],
+    "D805": [
+        "Immune Disorders"
+    ],
+    "D806": [
+        "Immune Disorders"
+    ],
+    "D807": [
+        "Immune Disorders"
+    ],
+    "D808": [
+        "Immune Disorders"
+    ],
+    "D809": [
+        "Immune Disorders"
+    ],
+    "D810": [
+        "Immune Disorders"
+    ],
+    "D811": [
+        "Immune Disorders"
+    ],
+    "D812": [
+        "Immune Disorders"
+    ],
+    "D8130": [
+        "Immune Disorders"
+    ],
+    "D8131": [
+        "Immune Disorders"
+    ],
+    "D8132": [
+        "Immune Disorders"
+    ],
+    "D8139": [
+        "Immune Disorders"
+    ],
+    "D814": [
+        "Immune Disorders"
+    ],
+    "D815": [
+        "Immune Disorders"
+    ],
+    "D816": [
+        "Immune Disorders"
+    ],
+    "D817": [
+        "Immune Disorders"
+    ],
+    "D8189": [
+        "Immune Disorders"
+    ],
+    "D819": [
+        "Immune Disorders"
+    ],
+    "D820": [
+        "Immune Disorders"
+    ],
+    "D821": [
+        "Immune Disorders"
+    ],
+    "D822": [
+        "Immune Disorders"
+    ],
+    "D823": [
+        "Immune Disorders"
+    ],
+    "D824": [
+        "Immune Disorders"
+    ],
+    "D828": [
+        "Immune Disorders"
+    ],
+    "D829": [
+        "Immune Disorders"
+    ],
+    "D830": [
+        "Immune Disorders"
+    ],
+    "D831": [
+        "Immune Disorders"
+    ],
+    "D832": [
+        "Immune Disorders"
+    ],
+    "D838": [
+        "Immune Disorders"
+    ],
+    "D839": [
+        "Immune Disorders"
+    ],
+    "D840": [
+        "Immune Disorders"
+    ],
+    "D848": [
+        "Immune Disorders"
+    ],
+    "D849": [
+        "Immune Disorders"
+    ],
+    "D893": [
+        "Immune Disorders"
+    ],
+    "D8940": [
+        "Immune Disorders"
+    ],
+    "D8941": [
+        "Immune Disorders"
+    ],
+    "D8942": [
+        "Immune Disorders"
+    ],
+    "D8943": [
+        "Immune Disorders"
+    ],
+    "D8949": [
+        "Immune Disorders"
+    ],
+    "D8982": [
+        "Immune Disorders"
+    ],
+    "D8989": [
+        "Immune Disorders"
+    ],
+    "D899": [
+        "Immune Disorders"
+    ],
+    "I8500": [
+        "End-Stage Liver Disease"
+    ],
+    "I8501": [
+        "End-Stage Liver Disease"
+    ],
+    "I8510": [
+        "End-Stage Liver Disease"
+    ],
+    "I8511": [
+        "End-Stage Liver Disease"
+    ],
+    "K7041": [
+        "End-Stage Liver Disease",
+        "Cirrhosis of Liver"
+    ],
+    "K7111": [
+        "End-Stage Liver Disease"
+    ],
+    "K7201": [
+        "End-Stage Liver Disease"
+    ],
+    "K7210": [
+        "End-Stage Liver Disease"
+    ],
+    "K7211": [
+        "End-Stage Liver Disease"
+    ],
+    "K7290": [
+        "End-Stage Liver Disease"
+    ],
+    "K7291": [
+        "End-Stage Liver Disease"
+    ],
+    "K766": [
+        "End-Stage Liver Disease"
+    ],
+    "K767": [
+        "End-Stage Liver Disease"
+    ],
+    "K7681": [
+        "End-Stage Liver Disease"
+    ],
+    "G47411": [
+        "Narcolepsy and Cataplexy"
+    ],
+    "G47419": [
+        "Narcolepsy and Cataplexy"
+    ],
+    "G47421": [
+        "Narcolepsy and Cataplexy"
+    ],
+    "G47429": [
+        "Narcolepsy and Cataplexy"
+    ],
+    "E840": [
+        "Cystic Fibrosis"
+    ],
+    "E8411": [
+        "Cystic Fibrosis"
+    ],
+    "E8419": [
+        "Cystic Fibrosis"
+    ],
+    "E848": [
+        "Cystic Fibrosis"
+    ],
+    "E849": [
+        "Cystic Fibrosis"
+    ],
+    "D841": [
+        "Specified Hereditary Metabolic/Immune Disorders"
+    ],
+    "E8801": [
+        "Specified Hereditary Metabolic/Immune Disorders"
+    ],
+    "E6601": [
+        "Morbid Obesity"
+    ],
+    "E662": [
+        "Morbid Obesity"
+    ],
+    "Z6841": [
+        "Morbid Obesity"
+    ],
+    "Z6842": [
+        "Morbid Obesity"
+    ],
+    "Z6843": [
+        "Morbid Obesity"
+    ],
+    "Z6844": [
+        "Morbid Obesity"
+    ],
+    "Z6845": [
+        "Morbid Obesity"
+    ],
+    "L4050": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "L4051": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "L4052": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "L4053": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "L4054": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "L4059": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "M340": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "M341": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "M342": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "M3481": [
+        "Psoriatic Arthropathy and Systemic Sclerosis",
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "M3482": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "M3483": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "M3489": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "M349": [
+        "Psoriatic Arthropathy and Systemic Sclerosis"
+    ],
+    "K860": [
+        "Chronic Pancreatitis"
+    ],
+    "K861": [
+        "Chronic Pancreatitis"
+    ],
+    "E083511": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083512": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083513": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083519": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083521": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083522": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083523": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083529": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083531": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083532": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083533": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083539": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083541": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083542": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083543": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083549": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083551": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083552": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083553": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083559": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083591": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083592": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083593": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083599": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093511": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093512": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093513": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093519": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093521": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093522": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093523": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093529": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093531": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093532": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093533": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093539": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093541": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093542": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093543": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093549": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093551": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093552": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093553": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093559": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093591": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093592": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093593": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093599": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103511": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103512": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103513": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103519": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103521": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103522": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103523": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103529": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103531": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103532": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103533": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103539": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103541": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103542": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103543": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103549": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103551": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103552": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103553": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103559": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103591": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103592": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103593": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103599": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113511": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113512": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113513": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113519": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113521": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113522": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113523": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113529": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113531": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113532": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113533": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113539": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113541": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113542": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113543": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113549": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113551": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113552": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113553": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113559": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113591": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113592": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113593": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113599": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133511": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133512": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133513": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133519": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133521": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133522": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133523": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133529": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133531": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133532": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133533": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133539": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133541": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133542": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133543": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133549": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133551": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133552": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133553": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133559": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133591": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133592": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133593": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133599": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "H4310": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "H4311": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "H4312": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "H4313": [
+        "Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "M96621": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96622": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96629": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96631": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96632": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96639": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M9665": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96661": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96662": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96669": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96671": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96672": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M96679": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M9669": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99510": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99511": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99512": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99518": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99520": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99521": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99522": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99523": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99524": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99528": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99530": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99531": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99532": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99533": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99534": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "N99538": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82310A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82311A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82312A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82318A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82319A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82320A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82321A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82322A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82328A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82329A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82330A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82331A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82332A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82338A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82339A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82390A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82391A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82392A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82398A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82399A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82510A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82511A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82513A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82514A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82515A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82518A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82520A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82521A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82523A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82524A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82525A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82528A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82530A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82531A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82533A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82534A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82535A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82538A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82590A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82591A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82593A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82594A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82595A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82598A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T826XXA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T827XXA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82818A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82828A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82838A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82848A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82856A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82858A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82868A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T82898A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83010A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83011A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83012A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83018A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83020A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83021A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83022A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83028A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83030A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83031A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83032A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83038A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83090A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83091A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83092A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83098A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83110A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83111A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83112A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83113A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83118A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83120A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83121A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83122A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83123A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83128A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83190A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83191A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83192A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83193A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83198A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8321XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8322XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8323XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8324XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8325XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8329XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83410A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83411A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83418A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83420A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83421A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83428A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83490A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83491A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83498A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83510A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83511A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83512A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83518A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83590A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83591A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83592A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83593A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83598A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8361XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8362XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8369XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83711A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83712A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83713A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83714A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83718A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83719A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83721A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83722A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83723A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83724A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83728A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T83729A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8379XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8381XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8382XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8383XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8384XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8385XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8386XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8389XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T839XXA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84010A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84011A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84012A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84013A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84018A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84019A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84020A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84021A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84022A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84023A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84028A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84029A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84030A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84031A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84032A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84033A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84038A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84039A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84050A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84051A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84052A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84053A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84058A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84059A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84060A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84061A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84062A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84063A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84068A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84069A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84090A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84091A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84092A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84093A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84098A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84099A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84110A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84111A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84112A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84113A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84114A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84115A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84116A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84117A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84119A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84120A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84121A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84122A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84123A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84124A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84125A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84126A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84127A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84129A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84190A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84191A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84192A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84193A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84194A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84195A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84196A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84197A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84199A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84210A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84213A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84216A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84218A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84220A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84223A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84226A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84228A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84290A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84293A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84296A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84298A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84310A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84318A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84320A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84328A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84390A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84398A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84410A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84418A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84420A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84428A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84490A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84498A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8450XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8451XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8452XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8453XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8454XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8459XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8460XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84610A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84611A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84612A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84613A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84614A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84615A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84619A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84620A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84621A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84622A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84623A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84624A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84625A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T84629A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8463XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8469XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T847XXA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8481XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8482XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8483XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8484XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8485XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8486XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8489XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T849XXA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8501XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8502XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8503XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8509XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85110A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85111A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85112A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85113A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85118A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85120A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85121A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85122A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85123A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85128A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85190A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85191A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85192A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85193A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85199A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85615A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85625A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85635A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85695A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8572XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85730A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85731A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85732A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85733A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85734A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85735A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85738A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T8579XA": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85810A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85820A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85830A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85840A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85850A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85860A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T85890A": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "T86842": [
+        "Complications of Specified Implanted Device or Graft"
+    ],
+    "M8700": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87011": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87012": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87019": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87021": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87022": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87029": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87031": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87032": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87033": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87034": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87035": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87036": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87037": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87038": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87039": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87041": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87042": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87043": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87044": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87045": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87046": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87050": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87051": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87052": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87059": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87061": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87062": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87063": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87064": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87065": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87066": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87071": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87072": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87073": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87074": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87075": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87076": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87077": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87078": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87079": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8708": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8709": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8710": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87111": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87112": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87119": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87121": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87122": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87129": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87131": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87132": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87133": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87134": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87135": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87136": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87137": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87138": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87139": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87141": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87142": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87143": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87144": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87145": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87146": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87150": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87151": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87152": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87159": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87161": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87162": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87163": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87164": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87165": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87166": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87171": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87172": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87173": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87174": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87175": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87176": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87177": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87178": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87179": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87180": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87188": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8719": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8720": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87211": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87212": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87219": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87221": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87222": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87229": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87231": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87232": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87233": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87234": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87235": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87236": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87237": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87238": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87239": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87241": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87242": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87243": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87244": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87245": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87246": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87250": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87251": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87252": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87256": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87261": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87262": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87263": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87264": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87265": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87266": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87271": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87272": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87273": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87274": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87275": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87276": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87277": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87278": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87279": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8728": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8729": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8730": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87311": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87312": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87319": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87321": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87322": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87329": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87331": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87332": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87333": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87334": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87335": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87336": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87337": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87338": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87339": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87341": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87342": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87343": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87344": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87345": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87346": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87350": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87351": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87352": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87353": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87361": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87362": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87363": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87364": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87365": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87366": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87371": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87372": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87373": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87374": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87375": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87376": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87377": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87378": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87379": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8738": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8739": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8780": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87811": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87812": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87819": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87821": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87822": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87829": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87831": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87832": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87833": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87834": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87835": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87836": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87837": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87838": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87839": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87841": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87842": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87843": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87844": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87845": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87849": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87850": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87851": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87852": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87859": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87861": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87862": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87863": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87864": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87865": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87869": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87871": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87872": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87873": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87874": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87875": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87876": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87877": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87878": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M87879": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8788": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M8789": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M879": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M9050": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90511": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90512": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90519": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90521": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90522": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90529": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90531": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90532": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90539": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90541": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90542": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90549": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90551": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90552": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90559": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90561": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90562": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90569": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90571": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90572": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M90579": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M9058": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "M9059": [
+        "Aseptic Necrosis of Bone"
+    ],
+    "I462": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "I468": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "I469": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "I4901": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "I4902": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J80": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J810": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J951": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J952": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J953": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J95821": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J95822": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9600": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9601": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9602": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9610": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9611": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9612": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9620": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9621": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9622": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9690": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9691": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "J9692": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "R570": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "R579": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "T8111XA": [
+        "Cardio-Respiratory Failure and Shock"
+    ],
+    "D460": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D461": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D4620": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D4621": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D4622": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D464": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D469": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D46A": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D46B": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D46Z": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D474": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "D7581": [
+        "Myelodysplastic Syndromes and Myelofibrosis"
+    ],
+    "M081": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M300": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M301": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M302": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M303": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M308": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M310": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M311": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M312": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3130": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3131": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M314": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M315": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M316": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M317": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M320": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3210": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3212": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3213": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies",
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "M3214": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3215": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3219": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M328": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M329": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3300": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3301": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies",
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "M3302": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3303": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3309": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3310": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3311": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies",
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "M3312": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3313": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3319": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3320": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3321": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies",
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "M3322": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3329": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3390": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3391": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies",
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "M3392": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3393": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3399": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3500": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3501": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3502": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies",
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "M3503": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3504": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M3509": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M351": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M355": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M358": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M359": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M360": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M368": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M450": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M451": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M452": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M453": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M454": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M455": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M456": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M457": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M458": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M459": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4600": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4601": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4602": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4603": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4604": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4605": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4606": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4607": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4608": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4609": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M461": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4650": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4651": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4652": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4653": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4654": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4655": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4656": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4657": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4658": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4659": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4680": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4681": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4682": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4683": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4684": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4685": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4686": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4687": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4688": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4689": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4690": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4691": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4692": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4693": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4694": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4695": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4696": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4697": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4698": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4699": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M488X1": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M488X2": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M488X3": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M488X4": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M488X5": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M488X6": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M488X7": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M488X8": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M488X9": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4980": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4981": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4982": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4983": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4984": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4985": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4986": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4987": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4988": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "M4989": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q7960": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q7961": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q7962": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q7963": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q7969": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q8740": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q87410": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q87418": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q8742": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q8743": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "Q8782": [
+        "Systemic Lupus Erythematosus, Other Connective Tissue Disorders, and Inflammatory Spondylopathies"
+    ],
+    "E08311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E08319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083211": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083212": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083213": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083219": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083291": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083292": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083293": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083299": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083312": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083313": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083391": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083392": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083393": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083399": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083411": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083412": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083413": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083419": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083491": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083492": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083493": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E083499": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E09311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E09319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093211": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093212": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093213": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093219": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093291": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093292": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093293": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093299": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093312": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093313": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093391": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093392": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093393": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093399": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093411": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093412": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093413": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093419": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093491": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093492": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093493": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E093499": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E10311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E10319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103211": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103212": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103213": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103219": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103291": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103292": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103293": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103299": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103312": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103313": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103391": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103392": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103393": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103399": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103411": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103412": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103413": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103419": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103491": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103492": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103493": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E103499": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E11311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E11319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113211": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113212": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113213": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113219": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113291": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113292": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113293": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113299": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113312": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113313": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113391": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113392": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113393": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113399": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113411": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113412": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113413": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113419": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113491": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113492": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113493": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E113499": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E13311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E13319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133211": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133212": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133213": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133219": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133291": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133292": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133293": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133299": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133311": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133312": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133313": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133319": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133391": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133392": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133393": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133399": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133411": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133412": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133413": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133419": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133491": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133492": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133493": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "E133499": [
+        "Diabetic Retinopathy - Except : CC122: Proliferative Diabetic Retinopathy and Vitreous Hemorrhage"
+    ],
+    "L1230": [
+        "Severe Skin Burn or Condition"
+    ],
+    "L1231": [
+        "Severe Skin Burn or Condition"
+    ],
+    "L1235": [
+        "Severe Skin Burn or Condition"
+    ],
+    "L511": [
+        "Severe Skin Burn or Condition"
+    ],
+    "L512": [
+        "Severe Skin Burn or Condition"
+    ],
+    "L513": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3111": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3121": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3122": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3131": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3132": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3133": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3141": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3142": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3143": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3144": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3151": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3152": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3153": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3154": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3155": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3161": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3162": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3163": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3164": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3165": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3166": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3171": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3172": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3173": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3174": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3175": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3176": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3177": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3181": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3182": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3183": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3184": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3185": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3186": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3187": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3188": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3191": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3192": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3193": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3194": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3195": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3196": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3197": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3198": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3199": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3211": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3221": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3222": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3231": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3232": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3233": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3241": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3242": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3243": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3244": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3251": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3252": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3253": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3254": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3255": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3261": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3262": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3263": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3264": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3265": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3266": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3271": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3272": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3273": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3274": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3275": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3276": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3277": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3281": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3282": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3283": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3284": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3285": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3286": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3287": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3288": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3291": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3292": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3293": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3294": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3295": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3296": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3297": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3298": [
+        "Severe Skin Burn or Condition"
+    ],
+    "T3299": [
+        "Severe Skin Burn or Condition"
+    ],
+    "G40011": [
+        "Intractable Epilepsy"
+    ],
+    "G40019": [
+        "Intractable Epilepsy"
+    ],
+    "G40111": [
+        "Intractable Epilepsy"
+    ],
+    "G40119": [
+        "Intractable Epilepsy"
+    ],
+    "G40211": [
+        "Intractable Epilepsy"
+    ],
+    "G40219": [
+        "Intractable Epilepsy"
+    ],
+    "G40311": [
+        "Intractable Epilepsy"
+    ],
+    "G40319": [
+        "Intractable Epilepsy"
+    ],
+    "G40411": [
+        "Intractable Epilepsy"
+    ],
+    "G40419": [
+        "Intractable Epilepsy"
+    ],
+    "G40803": [
+        "Intractable Epilepsy"
+    ],
+    "G40804": [
+        "Intractable Epilepsy"
+    ],
+    "G40813": [
+        "Intractable Epilepsy"
+    ],
+    "G40814": [
+        "Intractable Epilepsy"
+    ],
+    "G40823": [
+        "Intractable Epilepsy"
+    ],
+    "G40824": [
+        "Intractable Epilepsy"
+    ],
+    "G40911": [
+        "Intractable Epilepsy"
+    ],
+    "G40919": [
+        "Intractable Epilepsy"
+    ],
+    "G40A11": [
+        "Intractable Epilepsy"
+    ],
+    "G40A19": [
+        "Intractable Epilepsy"
+    ],
+    "G40B11": [
+        "Intractable Epilepsy"
+    ],
+    "G40B19": [
+        "Intractable Epilepsy"
+    ],
+    "D61810": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D61811": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D61818": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D700": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D701": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D702": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D703": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D704": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D708": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D709": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D71": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D720": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D761": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D762": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "D763": [
+        "Disorders of Immunity - Except : RxCC97: Immune Disorders"
+    ],
+    "K7030": [
+        "Cirrhosis of Liver"
+    ],
+    "K7031": [
+        "Cirrhosis of Liver"
+    ],
+    "K7040": [
+        "Cirrhosis of Liver"
+    ],
+    "K709": [
+        "Cirrhosis of Liver"
+    ],
+    "K743": [
+        "Cirrhosis of Liver"
+    ],
+    "K744": [
+        "Cirrhosis of Liver"
+    ],
+    "K745": [
+        "Cirrhosis of Liver"
+    ],
+    "K7460": [
+        "Cirrhosis of Liver"
+    ],
+    "K7469": [
+        "Cirrhosis of Liver"
+    ],
+    "R092": [
+        "Respiratory Arrest"
+    ],
+    "B4481": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J470": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J471": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J479": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J700": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J701": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J702": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J703": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J704": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J705": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J708": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J709": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8401": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8402": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8403": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8409": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8410": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84111": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84112": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84113": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84114": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84115": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84116": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84117": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8417": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J842": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8481": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8482": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8483": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84841": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84842": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84843": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J84848": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J8489": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J849": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ],
+    "J99": [
+        "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+    ]
+}
