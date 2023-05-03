@@ -295,6 +295,4 @@ As well, there is an NTA component adjustment factor, as demonstrated in the tab
 
 **Total daily price computation**
 
-.. math::
-
-   \sum_{i=1}^n x_i
+(∑_(i=1)^n BaseRate_i*CMI_i*AdjustmentFactor_i)+NonCaseMix  
