@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+PyPDPM/HIPPS.py
+PyPDPM/__init__.py
+PyPDPM.egg-info/PKG-INFO
+PyPDPM.egg-info/SOURCES.txt
+PyPDPM.egg-info/dependency_links.txt
+PyPDPM.egg-info/top_level.txt
