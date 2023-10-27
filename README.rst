@@ -5,7 +5,7 @@
     :alt: Latest PyPI version
 
 
-Tools for working with the CMS case-mix classification model, payment driven payment model (PDPM). Deatils about PDPM can be found here: https://www.cms.gov/medicare/medicare-fee-for-service-payment/snfpps/pdpm.
+Tools for working with the CMS case-mix classification model, payment driven payment model (PDPM). Details about PDPM can be found here: https://www.cms.gov/medicare/medicare-fee-for-service-payment/snfpps/pdpm.
 
 If you are interested in helping contribute to this repository, or have any questions, feel free to `send me an email <carostrickland321@gmail.com>`_.
 
