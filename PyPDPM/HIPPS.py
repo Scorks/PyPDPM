@@ -64,6 +64,76 @@ VARIABLE_PER_DIEM_ADJUSTMENTS = {'PT_OT': {range(1, 21): 1.00, range(21, 28): 0.
     range(70, 77): 0.84, range(77, 84): 0.82, range(84, 91): 0.80, range(91, 98): 0.78, range(98, 151): 0.76},
     'NTA': {range(1, 4): 3.00, range(4, 151): 1.00}}
 
+def getIntensityGroup(HIPPScode: str):
+    """
+
+    Groups a PDPM HIPPS code into one of ___ categories of care intensity
+
+    Parameters
+    ----------
+    HIPPScode : str
+        The PDPM HIPPS code for the patient
+
+    """
+    def normalize_dict_values(input_dict, new_min=0, new_max=10):
+        """
+        
+        Normalizes a CMI dictionary between new_min and new_max for intensity scoring
+        
+        """
+        # Find the minimum and maximum values in the dictionary
+        min_value = min(input_dict.values())
+        max_value = max(input_dict.values())
+
+        # Normalize each value in the dictionary to the new range
+        normalized_dict = {
+            key: ((value - min_value) / (max_value - min_value)) * (new_max - new_min) + new_min
+            for key, value in input_dict.items()
+        }
+
+        return normalized_dict
+    
+    def normalize_dict_of_tuples(input_dict, new_min=0, new_max=10):
+        """
+    
+        Normalizes a CMI dictionary between new_min and new_max for intensity scoring (when values are tuples)
+        
+        """
+        # Transpose the values to get separate lists for each element of the tuples
+        transposed_values = list(zip(*input_dict.values()))
+
+        # Normalize each list independently
+        normalized_lists = [
+            [((value - min(lst)) / (max(lst) - min(lst))) * (new_max - new_min) + new_min for value in lst]
+            for lst in transposed_values
+        ]
+
+        # Transpose the normalized values back to tuples
+        normalized_tuples = list(zip(*normalized_lists))
+
+        # Create a new dictionary with the same keys and the normalized tuples
+        normalized_dict = dict(zip(input_dict.keys(), normalized_tuples))
+
+        return normalized_dict
+    
+    HIPPS_characters = [char for char in HIPPScode]
+    PT_OT = HIPPS_characters[0]  # physical therapy and occupational therapy
+    SLP = HIPPS_characters[1]  # speech-language pathology
+    NPG = HIPPS_characters[2]  # nursing payment group
+    NTA = HIPPS_characters[3]  # non-therapy ancillaries
+
+    therapy_relative_significance_weights = {'PT': 0.186, 'OT': 0.174, 'SLP': 0.07, 'NPG': 0.325, 'NTA': 0.245}
+
+    # normalize each CMI dictionary between 0 and 10
+    PT_COMPONENT = normalize_dict_of_tuples(PT_OT_CMI_MAP, 0, 100)[PT_OT][0] * therapy_relative_significance_weights['PT']
+    OT_COMPONENT = normalize_dict_of_tuples(PT_OT_CMI_MAP, 0, 100)[PT_OT][1] * therapy_relative_significance_weights['OT']
+    SLP_COMPONENT = normalize_dict_values(SLP_CMI_MAP, 0, 100)[SLP] * therapy_relative_significance_weights['SLP']
+    NPG_COMPONENT = normalize_dict_values(NPG_CMI_MAP, 0, 100)[NPG] * therapy_relative_significance_weights['NPG']
+    NTA_COMPONENT = normalize_dict_values(NPG_CMI_MAP, 0, 100)[NTA] * therapy_relative_significance_weights['NTA']
+
+    # return grouping between 0 and 100
+    return round(PT_COMPONENT + OT_COMPONENT + SLP_COMPONENT + NPG_COMPONENT + NTA_COMPONENT)
+
 
 def getReimbursementAmount(HIPPScode: str, dayOfStay: int, urban: bool = True, year: str = '2022') -> float:
     """
@@ -103,7 +173,7 @@ def getReimbursementAmount(HIPPScode: str, dayOfStay: int, urban: bool = True, y
         SLP_CMI = SLP_CMI_MAP[SLP]
         NPG_CMI = NPG_CMI_MAP[NPG]
         NTA_CMI = NTA_CMI_MAP[NTA]
-    except Exception:
+    except:
         raise Exception('Invalid HIPPS code')
     if urban:
         BASE_RATE_MAP = BASE_RATES_URBAN[year]
@@ -579,6 +649,10 @@ def get_PDPM_HIPPS_code(PT_OT_PaymentGroup: str, SLP_PaymentGroup: str, NURS_Pay
 
 
 '''
+code = get_PDPM_HIPPS_code('TD', 'SG', 'CBC1', 'NE', 1)
+code = 'CLAA1'
+print(getIntensityGroup(code))
+
 def test() -> int:
     return 1
 

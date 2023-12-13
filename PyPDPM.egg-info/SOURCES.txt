@@ -11,3 +11,4 @@ PyPDPM.egg-info/top_level.txt
 PyPDPM/data/PDPM_ICD10_Mappings_FY2020_NTA.json
 PyPDPM/data/PDPM_ICD10_Mappings_FY2020_SLP.json
 PyPDPM/data/PDPM_ICD10_Mappings_FY2020_clinical_category.json
+tests/test_myFunctions.py

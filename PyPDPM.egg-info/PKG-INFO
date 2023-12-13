@@ -1,13 +1,12 @@
 Metadata-Version: 2.1
 Name: PyPDPM
-Version: 0.0.5.18
+Version: 0.0.5.20
 Summary: A Python library for dealing with PDPM HIPP codes
 Home-page: https://github.com/Scorks/PyPDPM
 Author: Caro Strickland
 Author-email: carostrickland321@gmail.com
 License: MIT
 Keywords: PDPM,HIPPS,ICD-10-CM Codes
-Platform: UNKNOWN
 License-File: LICENSE.txt
 
 **PyPDPM**
@@ -17,7 +16,7 @@ License-File: LICENSE.txt
     :alt: Latest PyPI version
 
 
-Tools for working with the CMS case-mix classification model, payment driven payment model (PDPM). Deatils about PDPM can be found here: https://www.cms.gov/medicare/medicare-fee-for-service-payment/snfpps/pdpm.
+Tools for working with the CMS case-mix classification model, payment driven payment model (PDPM). Details about PDPM can be found here: https://www.cms.gov/medicare/medicare-fee-for-service-payment/snfpps/pdpm.
 
 If you are interested in helping contribute to this repository, or have any questions, feel free to `send me an email <carostrickland321@gmail.com>`_.
 
@@ -369,4 +368,3 @@ as well as an NTA component adjustment factor:
 Using the above values, we can calculate the per-diem reimbursement from day 0 to n using the following formula:
 
 (:math:`\sum_{i=0}^n` :math:`BaseRate_i` * :math:`CMI_i` * :math:`AdjustmentFactor_i`) + :math:`NonCaseMix`
-
