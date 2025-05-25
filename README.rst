@@ -358,6 +358,6 @@ as well as an NTA component adjustment factor:
 
 Using the above values, we can calculate the per-diem reimbursement from day 0 to n using the following formula:
 
-.. image:: images/pdpm_equation.png
+.. image:: images/pdpm_background.png
    :alt: Equation
    :width: 400px
