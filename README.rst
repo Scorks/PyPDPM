@@ -4,6 +4,8 @@
     :target: https://pypi.python.org/pypi/icd
     :alt: Latest PyPI version
 
+[![PyPI Downloads](https://static.pepy.tech/badge/pypdpm)](https://pepy.tech/projects/pypdpm)
+
 
 Tools for working with the CMS case-mix classification model, payment driven payment model (PDPM). Details about PDPM can be found here: https://www.cms.gov/medicare/medicare-fee-for-service-payment/snfpps/pdpm.
 
