@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+from itertools import product
 
 # sys.path.append('..')
 
@@ -64,6 +65,28 @@ VARIABLE_PER_DIEM_ADJUSTMENTS = {'PT_OT': {range(1, 21): 1.00, range(21, 28): 0.
     range(70, 77): 0.84, range(77, 84): 0.82, range(84, 91): 0.80, range(91, 98): 0.78, range(98, 151): 0.76},
     'NTA': {range(1, 4): 3.00, range(4, 151): 1.00}}
 
+def generateAllCodes():
+    """
+    
+    Returns a list of all PDPM codes
+
+    Returns
+    ----------
+    uniqueCodeList : list
+        All possible codes that a patient could hold
+
+    """
+    uniqueCodeList = []
+    codeCombinations = list(product(VALID_PT_OT_GROUPS, VALID_SLP_GROUPS, VALID_NURS_GROUPS, VALID_NTA_GROUPS))
+    for code in codeCombinations:
+        currentCode = ''
+        for _ in range(len(code)):
+            for key, value in PAYMENT_GROUP_TO_HIPPS_CODE_VALUE.items():
+                if code[_] in key:
+                    currentCode += value
+        uniqueCodeList.append(currentCode)
+    return uniqueCodeList
+
 def getIntensityGroup(HIPPScode: str):
     """
 
@@ -97,6 +120,7 @@ def getIntensityGroup(HIPPScode: str):
         """
     
         Normalizes a CMI dictionary between new_min and new_max for intensity scoring (when values are tuples)
+
         
         """
         # Transpose the values to get separate lists for each element of the tuples
@@ -646,7 +670,6 @@ def get_PDPM_HIPPS_code(PT_OT_PaymentGroup: str, SLP_PaymentGroup: str, NURS_Pay
         HIPPS_code = next(v for k, v in PAYMENT_GROUP_TO_HIPPS_CODE_VALUE.items() if PT_OT_PaymentGroup in k) + next(v for k, v in PAYMENT_GROUP_TO_HIPPS_CODE_VALUE.items() if SLP_PaymentGroup in k) + next(v for k, v in PAYMENT_GROUP_TO_HIPPS_CODE_VALUE.items() if NURS_PaymentGroup in k) + next(v for k, v in PAYMENT_GROUP_TO_HIPPS_CODE_VALUE.items() if NTA_PaymentGroup in k) + str(assessmentIndicator)
     
     return HIPPS_code
-
 
 '''
 code = get_PDPM_HIPPS_code('TD', 'SG', 'CBC1', 'NE', 1)
